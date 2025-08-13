@@ -34,7 +34,7 @@ bool AppDelegate::applicationDidFinishLaunching()
 
     
     LuaStack* stack = pEngine->getLuaStack();
-    stack->setXXTEAKeyAndSign("2dxLua", strlen("2dxLua"), "XXTEA", strlen("XXTEA"));
+    //stack->setXXTEAKeyAndSign("2dxLua", strlen("2dxLua"), "XXTEA", strlen("XXTEA"));
     
     lua_State* L = stack->getLuaState();
     

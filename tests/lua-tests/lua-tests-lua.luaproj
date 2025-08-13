@@ -1,0 +1,196 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>E439935D-B2A2-46AE-856D-2AA408428F33</ProjectGuid>
+    <!--$guid1$-->
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="src\AccelerometerTest\" />
+    <Folder Include="src\ActionManagerTest\" />
+    <Folder Include="src\ActionsEaseTest\" />
+    <Folder Include="src\ActionsProgressTest\" />
+    <Folder Include="src\ActionsTest\" />
+    <Folder Include="src\AssetsManagerExTest\" />
+    <Folder Include="src\AssetsManagerTest\" />
+    <Folder Include="src\BillBoardTest\" />
+    <Folder Include="src\BugsTest\" />
+    <Folder Include="src\ByteCodeEncryptTest\" />
+    <Folder Include="src\Camera3DTest\" />
+    <Folder Include="src\CaptureScreenTest\" />
+    <Folder Include="src\ClickAndMoveTest\" />
+    <Folder Include="src\CocosDenshionTest\" />
+    <Folder Include="src\CocosStudio3DTest\" />
+    <Folder Include="src\CocoStudioTest\" />
+    <Folder Include="src\CocoStudioTest\CocoStudioActionTimelineTest2\" />
+    <Folder Include="src\CocoStudioTest\CocoStudioActionTimelineTest\" />
+    <Folder Include="src\CocoStudioTest\CocoStudioArmatureTest\" />
+    <Folder Include="src\CocoStudioTest\CocoStudioGUITest\" />
+    <Folder Include="src\CocoStudioTest\CocoStudioSceneTest\" />
+    <Folder Include="src\CocoStudioTest\CocoStudioSceneTest\TriggerCode\" />
+    <Folder Include="src\CocoStudioTest\CocoStudioUIEditorTest\" />
+    <Folder Include="src\ComponentTest\" />
+    <Folder Include="src\CurrentLanguageTest\" />
+    <Folder Include="src\DrawPrimitivesTest\" />
+    <Folder Include="src\EffectsAdvancedTest\" />
+    <Folder Include="src\EffectsTest\" />
+    <Folder Include="src\ExtensionTest\" />
+    <Folder Include="src\FastTiledMapTest\" />
+    <Folder Include="src\FontTest\" />
+    <Folder Include="src\IntervalTest\" />
+    <Folder Include="src\KeypadTest\" />
+    <Folder Include="src\LabelTestNew\" />
+    <Folder Include="src\LabelTest\" />
+    <Folder Include="src\LayerTest\" />
+    <Folder Include="src\LightTest\" />
+    <Folder Include="src\LuaBridgeTest\" />
+    <Folder Include="src\MaterialSystemTest\" />
+    <Folder Include="src\MenuTest\" />
+    <Folder Include="src\MotionStreakTest\" />
+    <Folder Include="src\NavMeshTest\" />
+    <Folder Include="src\NewAudioEngineTest\" />
+    <Folder Include="src\NewEventDispatcherTest\" />
+    <Folder Include="src\NodeTest\" />
+    <Folder Include="src\OpenGLTest\" />
+    <Folder Include="src\ParallaxTest\" />
+    <Folder Include="src\Particle3DTest\" />
+    <Folder Include="src\ParticleTest\" />
+    <Folder Include="src\Physics3DTest\" />
+    <Folder Include="src\PhysicsTest\" />
+    <Folder Include="src\RenderTextureTest\" />
+    <Folder Include="src\RotateWorldTest\" />
+    <Folder Include="src\Scene3DTest\" />
+    <Folder Include="src\SceneTest\" />
+    <Folder Include="src\SpineTest\" />
+    <Folder Include="src\Sprite3DTest\" />
+    <Folder Include="src\SpritePolygonTest\" />
+    <Folder Include="src\SpriteTest\" />
+    <Folder Include="src\TerrainTest\" />
+    <Folder Include="src\TextInputTest\" />
+    <Folder Include="src\Texture2dTest\" />
+    <Folder Include="src\TileMapTest\" />
+    <Folder Include="src\TouchesTest\" />
+    <Folder Include="src\TransitionsTest\" />
+    <Folder Include="src\UserDefaultTest\" />
+    <Folder Include="src\VibrateTest\" />
+    <Folder Include="src\VideoPlayerTest\" />
+    <Folder Include="src\WebViewTest\" />
+    <Folder Include="src\XMLHttpRequestTest\" />
+    <Folder Include="src\ZwoptexTest\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\AccelerometerTest\AccelerometerTest.lua" />
+    <Compile Include="src\ActionManagerTest\ActionManagerTest.lua" />
+    <Compile Include="src\ActionsEaseTest\ActionsEaseTest.lua" />
+    <Compile Include="src\ActionsProgressTest\ActionsProgressTest.lua" />
+    <Compile Include="src\ActionsTest\ActionsTest.lua" />
+    <Compile Include="src\AssetsManagerExTest\AssetsManagerExTest.lua" />
+    <Compile Include="src\AssetsManagerTest\AssetsManagerModule.lua" />
+    <Compile Include="src\AssetsManagerTest\AssetsManagerTest.lua" />
+    <Compile Include="src\BillBoardTest\BillBoardTest.lua" />
+    <Compile Include="src\BugsTest\BugsTest.lua" />
+    <Compile Include="src\ByteCodeEncryptTest\ByteCodeEncryptTest.lua" />
+    <Compile Include="src\Camera3DTest\Camera3DTest.lua" />
+    <Compile Include="src\CaptureScreenTest\CaptureScreenTest.lua" />
+    <Compile Include="src\ClickAndMoveTest\ClickAndMoveTest.lua" />
+    <Compile Include="src\CocosDenshionTest\CocosDenshionTest.lua" />
+    <Compile Include="src\CocosStudio3DTest\CocosStudio3DTest.lua" />
+    <Compile Include="src\CocoStudioTest\CocoStudioActionTimelineTest2\CocoStudioActionTimelineTest2.lua" />
+    <Compile Include="src\CocoStudioTest\CocoStudioActionTimelineTest\CocoStudioActionTimelineTest.lua" />
+    <Compile Include="src\CocoStudioTest\CocoStudioArmatureTest\CocoStudioArmatureTest.lua" />
+    <Compile Include="src\CocoStudioTest\CocoStudioGUITest\CocoStudioGUITest.lua" />
+    <Compile Include="src\CocoStudioTest\CocoStudioSceneTest\CocoStudioSceneTest.lua" />
+    <Compile Include="src\CocoStudioTest\CocoStudioSceneTest\TriggerCode\acts.lua" />
+    <Compile Include="src\CocoStudioTest\CocoStudioSceneTest\TriggerCode\cons.lua" />
+    <Compile Include="src\CocoStudioTest\CocoStudioSceneTest\TriggerCode\eventDef.lua" />
+    <Compile Include="src\CocoStudioTest\CocoStudioTest.lua" />
+    <Compile Include="src\CocoStudioTest\CocoStudioUIEditorTest\CocoStudioUIEditorTest.lua" />
+    <Compile Include="src\ComponentTest\enemy.lua" />
+    <Compile Include="src\ComponentTest\gameoverscene.lua" />
+    <Compile Include="src\ComponentTest\main.lua" />
+    <Compile Include="src\ComponentTest\player.lua" />
+    <Compile Include="src\ComponentTest\projectile.lua" />
+    <Compile Include="src\ComponentTest\scene.lua" />
+    <Compile Include="src\controller.lua" />
+    <Compile Include="src\CurrentLanguageTest\CurrentLanguageTest.lua" />
+    <Compile Include="src\DrawPrimitivesTest\DrawPrimitivesTest.lua" />
+    <Compile Include="src\EffectsAdvancedTest\EffectsAdvancedTest.lua" />
+    <Compile Include="src\EffectsTest\EffectsName.lua" />
+    <Compile Include="src\EffectsTest\EffectsTest.lua" />
+    <Compile Include="src\ExtensionTest\CocosBuilderTest.lua" />
+    <Compile Include="src\ExtensionTest\ExtensionTest.lua" />
+    <Compile Include="src\ExtensionTest\WebProxyTest.lua" />
+    <Compile Include="src\FastTiledMapTest\FastTiledMapTest.lua" />
+    <Compile Include="src\FontTest\FontTest.lua" />
+    <Compile Include="src\helper.lua" />
+    <Compile Include="src\IntervalTest\IntervalTest.lua" />
+    <Compile Include="src\KeypadTest\KeypadTest.lua" />
+    <Compile Include="src\LabelTestNew\LabelTestNew.lua" />
+    <Compile Include="src\LabelTest\LabelTest.lua" />
+    <Compile Include="src\LayerTest\LayerTest.lua" />
+    <Compile Include="src\LightTest\LightTest.lua" />
+    <Compile Include="src\LuaBridgeTest\LuaBridgeTest.lua" />
+    <Compile Include="src\mainMenu.lua" />
+    <Compile Include="src\MaterialSystemTest\MaterialSystemTest.lua" />
+    <Compile Include="src\MenuTest\MenuTest.lua" />
+    <Compile Include="src\MotionStreakTest\MotionStreakTest.lua" />
+    <Compile Include="src\NavMeshTest\NavMeshTest.lua" />
+    <Compile Include="src\NewAudioEngineTest\NewAudioEngineTest.lua" />
+    <Compile Include="src\NewEventDispatcherTest\NewEventDispatcherTest.lua" />
+    <Compile Include="src\NodeTest\NodeTest.lua" />
+    <Compile Include="src\OpenGLTest\OpenGLTest.lua" />
+    <Compile Include="src\ParallaxTest\ParallaxTest.lua" />
+    <Compile Include="src\Particle3DTest\Particle3DTest.lua" />
+    <Compile Include="src\ParticleTest\ParticleTest.lua" />
+    <Compile Include="src\Physics3DTest\Physics3DTest.lua" />
+    <Compile Include="src\PhysicsTest\PhysicsTest.lua" />
+    <Compile Include="src\RenderTextureTest\RenderTextureTest.lua" />
+    <Compile Include="src\RotateWorldTest\RotateWorldTest.lua" />
+    <Compile Include="src\Scene3DTest\Scene3DTest.lua" />
+    <Compile Include="src\SceneTest\SceneTest.lua" />
+    <Compile Include="src\SpineTest\SpineTest.lua" />
+    <Compile Include="src\Sprite3DTest\Sprite3DTest.lua" />
+    <Compile Include="src\SpritePolygonTest\SpritePolygonTest.lua" />
+    <Compile Include="src\SpriteTest\SpriteTest.lua" />
+    <Compile Include="src\TerrainTest\TerrainTest.lua" />
+    <Compile Include="src\testResource.lua" />
+    <Compile Include="src\TextInputTest\TextInputTest.lua" />
+    <Compile Include="src\Texture2dTest\Texture2dTest.lua" />
+    <Compile Include="src\TileMapTest\TileMapTest.lua" />
+    <Compile Include="src\TouchesTest\Ball.lua" />
+    <Compile Include="src\TouchesTest\Paddle.lua" />
+    <Compile Include="src\TouchesTest\TouchesTest.lua" />
+    <Compile Include="src\TransitionsTest\TransitionsName.lua" />
+    <Compile Include="src\TransitionsTest\TransitionsTest.lua" />
+    <Compile Include="src\UserDefaultTest\UserDefaultTest.lua" />
+    <Compile Include="src\VibrateTest\VibrateTest.lua" />
+    <Compile Include="src\VideoPlayerTest\VideoPlayerTest.lua" />
+    <Compile Include="src\VisibleRect.lua" />
+    <Compile Include="src\WebViewTest\WebViewTest.lua" />
+    <Compile Include="src\XMLHttpRequestTest\XMLHttpRequestTest.lua" />
+    <Compile Include="src\ZwoptexTest\ZwoptexTest.lua" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\ByteCodeEncryptTest\ByteCodeAndEncryptTest-arm64.luac" />
+    <Content Include="src\ByteCodeEncryptTest\ByteCodeAndEncryptTest.luac" />
+    <Content Include="src\ByteCodeEncryptTest\ByteCodeTest-arm64.luac" />
+    <Content Include="src\ByteCodeEncryptTest\ByteCodeTest.luac" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>
