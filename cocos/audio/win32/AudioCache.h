@@ -37,6 +37,7 @@
 #include <AL/al.h>
 #endif
 #include "CCPlatformMacros.h"
+#include <functional>
 
 #define QUEUEBUFFER_NUM 5
 #define QUEUEBUFFER_TIME_STEP 0.1f
