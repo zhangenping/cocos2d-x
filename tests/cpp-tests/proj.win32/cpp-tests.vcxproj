@@ -103,7 +103,8 @@
     </PreLinkEvent>
     <PreBuildEvent>
       <Command>xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
-xcopy "$(OutDir)..\*.dll" "$(OutDir)" /D /Y</Command>
+xcopy "$(OutDir)..\*.dll" "$(OutDir)" /D /Y
+xcopy "$(OutDir)..\*.pdb" "$(OutDir)" /D /Y</Command>
     </PreBuildEvent>
     <PreBuildEvent>
       <Message>Copy files</Message>

@@ -1,5 +1,15 @@
 LOCAL_PATH := $(call my-dir)
 
+COCOS2DX_ROOT := $(LOCAL_PATH)/../../../../..
+COCOS2DX_SRC := $(COCOS2DX_ROOT)/cocos
+
+# 添加导入路径
+$(call import-add-path,$(COCOS2DX_ROOT))
+$(call import-add-path,$(COCOS2DX_ROOT)/cocos)
+$(call import-add-path,$(COCOS2DX_ROOT)/external)
+$(call import-add-path,$(COCOS2DX_ROOT)/cocos/audio/include)
+
+
 include $(CLEAR_VARS)
 
 LOCAL_MODULE := cpp_tests_shared
@@ -200,7 +210,19 @@ LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../../Classes \
                     $(LOCAL_PATH)/../../../../..
 
 LOCAL_STATIC_LIBRARIES := cocos2dx_static
+LOCAL_STATIC_LIBRARIES += cocos_curl_static
+LOCAL_STATIC_LIBRARIES += cocos_extension_static
+
+LOCAL_LDLIBS := -lGLESv2 \
+                -lGLESv3 \
+                -llog \
+                -lz \
+                -landroid
 
 include $(BUILD_SHARED_LIBRARY)
+
+$(call import-module, cocos)
+$(call import-module, external/curl/prebuilt/android)
+$(call import-module, extensions)
 
 $(call import-module,cocos)
