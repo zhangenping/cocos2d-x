@@ -24,6 +24,8 @@
  ****************************************************************************/
 
 // FIXME: hack, must be included before ziputils
+#define _GNU_SOURCE 1
+#include <stdio.h>
 #ifdef MINIZIP_FROM_SYSTEM
 #include <minizip/unzip.h>
 #else // from our embedded sources

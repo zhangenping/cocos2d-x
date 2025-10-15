@@ -8,6 +8,7 @@ buildscript {
             maven { url "https://maven.aliyun.com/repository/google" }
             maven { url "https://maven.aliyun.com/repository/jcenter" }
             maven { url "https://maven.aliyun.com/repository/gradle-plugin" }
+            maven { url 'https://maven.qq.com/repository/public/' }
         } else {
             google()
             mavenCentral()
@@ -15,8 +16,8 @@ buildscript {
         }
     }
     dependencies {
-        // 更新这个版本，与Gradle 6.7.1兼容
-        classpath "com.android.tools.build:gradle:4.2.2"
+        classpath "com.android.tools.build:gradle:7.0.4"
+        classpath 'com.tencent.bugly:symtabfileuploader:2.2.1'
     }
 }
 
@@ -27,6 +28,7 @@ allprojects {
             maven { url "https://maven.aliyun.com/repository/google" }
             maven { url "https://maven.aliyun.com/repository/jcenter" }
             maven { url "https://maven.aliyun.com/repository/gradle-plugin" }
+            maven { url 'https://maven.qq.com/repository/public/' }
         } else {
             google()
             mavenCentral()

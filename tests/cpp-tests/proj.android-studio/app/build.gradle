@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'bugly'
 
 android {
     compileSdkVersion 30
@@ -20,12 +21,19 @@ android {
         externalNativeBuild {
             ndkBuild {
                 arguments "NDK_APPLICATION_MK:=jni/Application.mk",
-                        "APP_PLATFORM:=android-21"
-                cppFlags "-std=c++14 -frtti -fexceptions"
-                //abiFilters 'armeabi-v7a'//, 'arm64-v8a', 'x86', 'x86_64'
+                        "APP_PLATFORM:=android-21",
+                        "NDK_DEBUG=1",  // 添加调试模式
+                        "V=1"          // 添加详细输出
+                cppFlags "-std=c++14 -frtti -fexceptions", "-Wno-c++11-narrowing",
+                        "-g",         // 添加调试符号
+                        "-O0",        // 禁用优化
+                        "-D_DEBUG=1"  // 定义调试宏
+                cFlags "-Wno-c++11-narrowing",
+                        "-g",
+                        "-O0"
             }
             ndk {
-                abiFilters "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
+                abiFilters "armeabi-v7a",'x86'
             }
         }
     }
@@ -34,6 +42,13 @@ android {
         ndkBuild {
             path file('jni/Android.mk').absolutePath
         }
+    }
+
+    packagingOptions {
+        // 或者更通用的排除方式
+        doNotStrip '**/*.so'  // 不要剥离调试符号
+        pickFirst '**/libc++_shared.so'
+        pickFirst '**/libcpp_tests.so'
     }
 
     // 如果需要，配置NDK版本
@@ -62,10 +77,16 @@ android {
 
     buildTypes {
         release {
+            debuggable true    // 即使release也允许调试
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             if (project.hasProperty("RELEASE_STORE_FILE")) {
                 signingConfig signingConfigs.release
+            }
+            externalNativeBuild {
+                ndkBuild {
+                    cppFlags "-g"  // release版本也保留调试符号
+                }
             }
         }
     }
@@ -74,4 +95,15 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':libcocos2dx')
+    implementation 'com.tencent.bugly:crashreport:3.4.4' // 兼容版本
+    // 如果需要 Native 崩溃监控
+    implementation 'com.tencent.bugly:nativecrashreport:3.9.0'
+}
+
+bugly {
+    appId = "7cedd98b5b" // 例如 "e9a0000f0f"
+   appKey = "d5fc4924-b9c0-41e1-9857-42e0218398df" // 可选，在"设置"->"应用信息"中查看
+   //version = "1.0.0" // 指定版本号，默认为当前版本
+   execute = true // 设置为 true，表示允许插件在构建时执行
+   upload = true // 设置为 true，表示允许插件上传符号表
 }

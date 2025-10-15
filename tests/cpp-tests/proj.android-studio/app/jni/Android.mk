@@ -12,7 +12,10 @@ $(call import-add-path,$(COCOS2DX_ROOT)/cocos/audio/include)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := cpp_tests_shared
+LOCAL_CFLAGS := -D_DEBUG=1 -DCOCOS2D_DEBUG=1 -g -O0
+LOCAL_CPPFLAGS := -std=c++14 -frtti -fexceptions -g -O0
+
+LOCAL_MODULE := cpp_tests
 
 LOCAL_MODULE_FILENAME := libcpp_tests
 
@@ -205,6 +208,8 @@ LOCAL_SRC_FILES := main.cpp \
 ../../../Classes/ZwoptexTest/ZwoptexTest.cpp \
 ../../../Classes/controller.cpp \
 ../../../Classes/testBasic.cpp
+
+LOCAL_SRC_FILES += compatibility.c
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../../Classes \
                     $(LOCAL_PATH)/../../../../..

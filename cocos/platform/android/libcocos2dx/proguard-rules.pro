@@ -15,3 +15,11 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+# Bugly Native 符号表保留
+-keep class com.tencent.bugly.** { *; }
+-dontwarn com.tencent.bugly.**
+
+# 保留 Native 方法名
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
