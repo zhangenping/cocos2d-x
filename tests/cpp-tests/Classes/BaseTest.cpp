@@ -148,7 +148,8 @@ void TestList::runThisTest()
 
     auto visibleSize = director->getVisibleSize();
     auto origin = director->getVisibleOrigin();
-
+    scene = NULL;
+    scene->addChild(NULL);
     auto tableView = TestCustomTableView::create(this, Size(400, visibleSize.height));
     tableView->setPosition(origin.x + (visibleSize.width - 400) / 2, origin.y);
     tableView->setDirection(ScrollView::Direction::VERTICAL);
@@ -229,22 +230,40 @@ void TestList::tableCellTouched(TableView* table, TableViewCell* cell)
 
 TableViewCell* TestList::tableCellAtIndex(TableView *table, ssize_t idx)
 {
-    auto cell = table->dequeueCell();
-    if (!cell)
+    if (table)
     {
-        cell = TableViewCell::create();
-        auto label = Label::createWithTTF(_childTestNames[idx], "fonts/arial.ttf", 20.0f);
-        label->setTag(TABEL_LABEL_TAG);
-        label->setPosition(200, 15);
-        cell->addChild(label);
+        auto cell = table->dequeueCell();
+        if (!cell)
+        {
+            cell = TableViewCell::create();
+            if (idx < _childTestNames.size())
+            {
+                auto label = Label::createWithTTF(_childTestNames[idx], "fonts/arial.ttf", 20.0f);
+                if (label)
+                {
+                    label->setTag(TABEL_LABEL_TAG);
+                    label->setPosition(200, 15);
+                    if (cell)
+                    {
+                        cell->addChild(label);
+                    }
+                }
+            }
+        }
+        else
+        {
+            if (idx < _childTestNames.size())
+            {
+                auto label = dynamic_cast<Label*>(cell->getChildByTag(TABEL_LABEL_TAG));
+                if (label)
+                {
+                    label->setString(_childTestNames[idx]);
+                }
+            }
+        }
+        return cell;
     }
-    else
-    {
-        auto label = (Label*)cell->getChildByTag(TABEL_LABEL_TAG);
-        label->setString(_childTestNames[idx]);
-    }
-
-    return cell;
+    return NULL;
 }
 
 Size TestList::tableCellSizeForIndex(TableView *table, ssize_t idx)

@@ -2,6 +2,8 @@ APP_STL := c++_shared
 APP_CPPFLAGS := -frtti -fexceptions -DCC_ENABLE_CHIPMUNK_INTEGRATION=1 -std=c++14 -fsigned-char
 APP_CPPFLAGS += -Wno-register
 APP_CPPFLAGS += -Dgetdtablesize\(\)=1024
+APP_CPPFLAGS += -g -DDEBUG=1
+APP_CFLAGS += -g -DDEBUG=1
 APP_LDFLAGS := -latomic
 APP_ABI := armeabi-v7a x86
 APP_PLATFORM := android-21

@@ -22,15 +22,19 @@ android {
             ndkBuild {
                 arguments "NDK_APPLICATION_MK:=jni/Application.mk",
                         "APP_PLATFORM:=android-21",
-                        "NDK_DEBUG=1",  // 添加调试模式
-                        "V=1"          // 添加详细输出
-                cppFlags "-std=c++14 -frtti -fexceptions", "-Wno-c++11-narrowing",
-                        "-g",         // 添加调试符号
-                        "-O0",        // 禁用优化
-                        "-D_DEBUG=1"  // 定义调试宏
+                        "NDK_DEBUG=1",
+                        "V=1"
+                cppFlags "-std=c++14 -frtti -fexceptions",
+                        "-Wno-c++11-narrowing",
+                        "-g",           // 调试符号
+                        "-O0",          // 禁用优化
+                        "-DDEBUG=1",    // 调试宏
+                        "-D_DEBUG=1"
                 cFlags "-Wno-c++11-narrowing",
                         "-g",
-                        "-O0"
+                        "-O0",
+                        "-DDEBUG=1",
+                        "-D_DEBUG=1"
             }
             ndk {
                 abiFilters "armeabi-v7a",'x86'
@@ -45,10 +49,12 @@ android {
     }
 
     packagingOptions {
-        // 或者更通用的排除方式
-        doNotStrip '**/*.so'  // 不要剥离调试符号
+        doNotStrip '**/*.so'  // 禁止剥离所有so文件的调试符号
         pickFirst '**/libc++_shared.so'
         pickFirst '**/libcpp_tests.so'
+        // 添加其他可能的库
+        pickFirst '**/libcocos2d.so'
+        pickFirst '**/libbugly.so'
     }
 
     // 如果需要，配置NDK版本
@@ -76,8 +82,21 @@ android {
     }
 
     buildTypes {
+        debug {
+            debuggable true
+            jniDebuggable true    // 启用JNI调试
+            minifyEnabled false
+            externalNativeBuild {
+                ndkBuild {
+                    cppFlags "-g -O0 -DDEBUG=1"
+                    cFlags "-g -O0 -DDEBUG=1"
+                }
+            }
+        }
+
         release {
-            debuggable true    // 即使release也允许调试
+            debuggable true
+            jniDebuggable true    // 启用JNI调试
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             if (project.hasProperty("RELEASE_STORE_FILE")) {
@@ -85,7 +104,8 @@ android {
             }
             externalNativeBuild {
                 ndkBuild {
-                    cppFlags "-g"  // release版本也保留调试符号
+                    cppFlags "-g -O1"  // 保留调试符号，但使用O1优化
+                    cFlags "-g -O1"
                 }
             }
         }

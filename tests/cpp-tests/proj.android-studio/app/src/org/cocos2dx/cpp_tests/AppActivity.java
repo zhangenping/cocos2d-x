@@ -63,31 +63,8 @@ public class AppActivity extends Cocos2dxActivity {
         Log.d(TAG, "AppActivity onCreate");
         BuglyManager.init(this);
         // 设置全局异常处理器
-        setupNativeExceptionHandler();
         setGlobalExceptionHandler();
-
         Log.d(TAG, "Bugly 初始化状态: " + BuglyManager.isBuglyInitialized());
-    }
-
-    private void setupNativeExceptionHandler() {
-        Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
-            @Override
-            public void uncaughtException(Thread thread, Throwable ex) {
-                Log.e("Bugly", "捕获到未处理异常: " + ex.getMessage());
-                // 确保异常上报
-                if (BuglyManager.isBuglyInitialized()) {
-                    CrashReport.postCatchedException(ex);
-                }
-                // 等待上报完成
-                try {
-                    Thread.sleep(3000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                // 退出应用
-                System.exit(1);
-            }
-        });
     }
 
     @Override
@@ -115,39 +92,28 @@ public class AppActivity extends Cocos2dxActivity {
             public void run() {
                 Log.w("Bugly", "=== 开始 Bugly 测试 ===");
                 // 这里可以触发测试崩溃
-                // BuglyManager.testJavaCrash();
+                 //BuglyManager.testJavaCrash();
+                CrashReport.testJavaCrash();
             }
         }, 10000); // Bugly 初始化后 10 秒测试
     }
 
     private void setGlobalExceptionHandler() {
-        Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
-            @Override
-            public void uncaughtException(Thread thread, Throwable ex) {
-                Log.e(TAG, "未捕获异常: " + ex.getMessage(), ex);
+        Thread.setDefaultUncaughtExceptionHandler((thread, throwable) -> {
+            // 打印 native 崩溃信息
+            Log.e("CRASH", "Thread: " + thread.getName(), throwable);
 
-                // 上报异常到 Bugly
-                BuglyManager.reportException(ex, "全局未捕获异常");
-
-                // 直接退出
-                finish();
-                System.exit(1);
+            // 打印堆栈
+            StringBuilder sb = new StringBuilder();
+            for (StackTraceElement element : throwable.getStackTrace()) {
+                sb.append(element.toString()).append("\n");
             }
+            Log.e("CRASH", "Stack: " + sb.toString());
+
+            System.exit(1);
         });
     }
 
-    /**
-     * 测试崩溃上报（仅调试用）
-     */
-    public void testCrashReport() {
-        if (BuildConfig.DEBUG) {
-            BuglyManager.testJavaCrash();
-        }
-    }
-
-    /**
-     * 设置用户信息（在登录后调用）
-     */
     public void setUserInfo(String userId) {
         BuglyManager.setUserIdentifier(userId);
     }

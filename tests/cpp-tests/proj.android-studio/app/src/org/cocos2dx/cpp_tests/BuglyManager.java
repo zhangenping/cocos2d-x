@@ -9,17 +9,11 @@ import android.util.Log;
 
 import com.tencent.bugly.crashreport.CrashReport;
 
-/**
- * Bugly 异常监控管理器
- */
 public class BuglyManager {
     private static final String TAG = "BuglyManager";
     private static boolean isInitialized = false;
     private static final String BUGLY_APP_ID = "7cedd98b5b";
 
-    /**
-     * 初始化 Bugly
-     */
     public static void init(Context context) {
         if (isInitialized) {
             Log.d(TAG, "Bugly 已经初始化过");
@@ -28,11 +22,6 @@ public class BuglyManager {
 
         try {
             Log.d(TAG, "开始初始化 Bugly, AppId: " + BUGLY_APP_ID);
-
-            if (BUGLY_APP_ID.equals("替换为你的APP_ID")) {
-                Log.e(TAG, "请先配置正确的 Bugly AppId");
-                return;
-            }
 
             // 使用 CrashReport 进行初始化
             CrashReport.UserStrategy strategy = new CrashReport.UserStrategy(context);
