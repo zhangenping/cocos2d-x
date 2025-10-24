@@ -2,37 +2,25 @@
 
 buildscript {
     repositories {
-        if (hasProperty("USE_INLAND_IMAGE") && USE_INLAND_IMAGE as boolean) {
-            println("use inland image")
-            maven { url "https://maven.aliyun.com/repository/public" }
-            maven { url "https://maven.aliyun.com/repository/google" }
-            maven { url "https://maven.aliyun.com/repository/jcenter" }
-            maven { url "https://maven.aliyun.com/repository/gradle-plugin" }
-            maven { url 'https://maven.qq.com/repository/public/' }
-        } else {
-            google()
-            mavenCentral()
-            jcenter()
-        }
+        jcenter()
+        google()
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:7.0.4"
-        classpath 'com.tencent.bugly:symtabfileuploader:2.2.1'
+        classpath 'com.android.tools.build:gradle:7.0.4' // 更新Android插件版本（如果是Android项目）
+        // 配置自动上传符号表插件，注：为了能快速并准确地定位用户APP发生Crash的代码位置，Bugly使用符号表对APP发生Crash的程序堆栈进行解析和还原
+        classpath 'com.tencent.bugly:symtabfileuploader:latest.release'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
     }
 }
 
 allprojects {
     repositories {
-        if (hasProperty("USE_INLAND_IMAGE") && USE_INLAND_IMAGE as boolean) {
-            maven { url "https://maven.aliyun.com/repository/public" }
-            maven { url "https://maven.aliyun.com/repository/google" }
-            maven { url "https://maven.aliyun.com/repository/jcenter" }
-            maven { url "https://maven.aliyun.com/repository/gradle-plugin" }
-            maven { url 'https://maven.qq.com/repository/public/' }
-        } else {
-            google()
-            mavenCentral()
-            jcenter()
-        }
+        jcenter()
+        google()
     }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
 }

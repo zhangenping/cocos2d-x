@@ -145,11 +145,9 @@ void TestList::runThisTest()
     _cellTouchEnabled = true;
     auto director = Director::getInstance();
     auto scene = Scene::create();
-
     auto visibleSize = director->getVisibleSize();
     auto origin = director->getVisibleOrigin();
-    scene = NULL;
-    scene->addChild(NULL);
+
     auto tableView = TestCustomTableView::create(this, Size(400, visibleSize.height));
     tableView->setPosition(origin.x + (visibleSize.width - 400) / 2, origin.y);
     tableView->setDirection(ScrollView::Direction::VERTICAL);

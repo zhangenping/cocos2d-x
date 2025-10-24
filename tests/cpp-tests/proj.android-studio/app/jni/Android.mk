@@ -214,6 +214,7 @@ LOCAL_SRC_FILES += compatibility.c
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../../Classes \
                     $(LOCAL_PATH)/../../../../..
 
+LOCAL_STATIC_LIBRARIES := cocos2dxandroid_static
 LOCAL_STATIC_LIBRARIES := cocos2dx_static
 LOCAL_STATIC_LIBRARIES += cocos_curl_static
 LOCAL_STATIC_LIBRARIES += cocos_extension_static
