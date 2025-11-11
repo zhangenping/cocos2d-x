@@ -5,107 +5,81 @@ pipeline {
         ANDROID_HOME = 'D:\\NVPACK\\android-sdk-windows'
         PROJECT_PATH = 'E:\\cocos2d-x\\tests\\cpp-tests\\proj.android-studio'
         OUTPUT_DIR = 'D:\\apk'
-        // æ·»åŠ Gradleä¼˜åŒ–å‚æ•°
-        GRADLE_OPTS = '-Dorg.gradle.daemon=false -Dorg.gradle.vfs.watch=false -Dorg.gradle.caching=true'
-        JAVA_OPTS = '-Xmx4096m -XX:MaxMetaspaceSize=1024m'
+        // ÓÅ»¯GradleºÍJava²ÎÊı
+        GRADLE_OPTS = '-Dorg.gradle.daemon=true -Dorg.gradle.parallel=true -Dorg.gradle.caching=true'
+        JAVA_OPTS = '-Xmx4096m -XX:MaxMetaspaceSize=1024m -XX:+UseG1GC'
     }
     
     triggers {
-        pollSCM('H/5 * * * *')  // æ¯5åˆ†é’Ÿæ£€æŸ¥ä¸€æ¬¡Gitæ›´æ–°
+        pollSCM('H/5 * * * *')
     }
     
     stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'cocos2d-x-3.10', 
-                url: 'https://github.com/zhangenping/cocos2d-x.git',
-                credentialsId: '1520153104@qq.com'
-            }
-        }
-        
-        stage('Clean Project') {
+        stage('Check SCM Changes') {
             steps {
                 script {
-                    dir(env.PROJECT_PATH) {
-                        // åªæ¸…ç†ï¼Œä¸æ„å»º
-                        bat './gradlew clean --no-daemon --console=plain'
+                    // ¼ì²éÊÇ·ñÓĞÊµ¼ÊµÄÎÄ¼ş±ä¸ü£¬±ÜÃâÎŞÎ½¹¹½¨
+                    def changes = bat(script: 'git diff --name-only HEAD~1 HEAD', returnStdout: true).trim()
+                    if (!changes) {
+                        echo "Ã»ÓĞ¼ì²âµ½´úÂë±ä¸ü£¬Ìø¹ı¹¹½¨"
+                        currentBuild.result = 'SUCCESS'
                     }
                 }
             }
         }
         
-        stage('Build APK') {
+        stage('Prepare Environment') {
+            when {
+                expression { currentBuild.result != 'SUCCESS' }
+            }
+            steps {
+                script {
+                    bat """
+                        if not exist "${OUTPUT_DIR}" mkdir "${OUTPUT_DIR}"
+                    """
+                }
+            }
+        }
+        
+        stage('Incremental Build') {
+            when {
+                expression { currentBuild.result != 'SUCCESS' }
+            }
             steps {
                 script {
                     dir(env.PROJECT_PATH) {
-                        // ä½¿ç”¨ä¼˜åŒ–å‚æ•°ä¸€æ¬¡æ€§æ„å»ºAPK
-                        bat '''
-                            ./gradlew assembleDebug \
-                                --no-daemon \
-                                --no-watch-fs \
-                                --build-cache \
-                                --parallel \
-                                --console=plain \
-                                -Dorg.gradle.vfs.watch=false \
-                                -Dorg.gradle.caching=true
-                        '''
+                        // Ê¹ÓÃÔöÁ¿¹¹½¨£¬Ö»±àÒë±ä¸üµÄ²¿·Ö
+                        bat """
+                            gradlew assembleDebug ^
+                                --configure-on-demand ^
+                                --parallel ^
+                                --build-cache ^
+                                --no-rebuild ^
+                                --console=plain
+                        """
                     }
                 }
             }
         }
         
-        stage('Find and Copy APK') {
+        stage('Quick APK Copy') {
+            when {
+                expression { currentBuild.result != 'SUCCESS' }
+            }
             steps {
                 script {
                     dir(env.PROJECT_PATH) {
-                        bat '''
-                            echo "=== å¼€å§‹æŸ¥æ‰¾APKæ–‡ä»¶ ==="
-                            echo "å·¥ä½œç›®å½•:"
-                            cd
-                            
-                            # é¦–å…ˆæ£€æŸ¥æ ‡å‡†è·¯å¾„
-                            if exist "app\\build\\outputs\\apk\\debug\\*.apk" (
-                                echo "åœ¨æ ‡å‡†è·¯å¾„æ‰¾åˆ°APKæ–‡ä»¶"
-                                dir /b "app\\build\\outputs\\apk\\debug\\*.apk"
-                                copy "app\\build\\outputs\\apk\\debug\\*.apk" "%OUTPUT_DIR%\\"
-                                echo "APKå·²å¤åˆ¶åˆ°: %OUTPUT_DIR%"
+                        bat """
+                            if exist "app\\\\build\\\\outputs\\\\apk\\\\debug\\\\*.apk" (
+                                echo "¿ìËÙ¸´ÖÆAPKÎÄ¼ş..."
+                                copy "app\\\\build\\\\outputs\\\\apk\\\\debug\\\\*.apk" "${OUTPUT_DIR}\\\\" >nul
+                                echo "APK¸´ÖÆÍê³É"
                             ) else (
-                                echo "åœ¨æ ‡å‡†è·¯å¾„æœªæ‰¾åˆ°APKï¼Œæœç´¢æ•´ä¸ªé¡¹ç›®..."
-                                dir /b/s *.apk
-                                
-                                # å¦‚æœæ‰¾åˆ°APKæ–‡ä»¶ï¼Œå¤åˆ¶åˆ°è¾“å‡ºç›®å½•
-                                for /r %%i in (*.apk) do (
-                                    echo "æ‰¾åˆ°APKæ–‡ä»¶: %%i"
-                                    copy "%%i" "%OUTPUT_DIR%\\"
-                                    echo "å·²å¤åˆ¶: %%i -> %OUTPUT_DIR%"
-                                )
-                            )
-                            
-                            # æ£€æŸ¥æ˜¯å¦æˆåŠŸå¤åˆ¶
-                            if exist "%OUTPUT_DIR%\\*.apk" (
-                                echo "=== APKå¤åˆ¶æˆåŠŸ ==="
-                                dir /b "%OUTPUT_DIR%\\*.apk"
-                            ) else (
-                                echo "!!! é”™è¯¯: æœªæ‰¾åˆ°æˆ–å¤åˆ¶APKæ–‡ä»¶ !!!"
+                                echo "´íÎó: Î´ÕÒµ½APKÎÄ¼ş"
                                 exit 1
                             )
-                        '''
+                        """
                     }
-                }
-            }
-        }
-        
-        stage('Archive APK') {
-            steps {
-                script {
-                    // å½’æ¡£APKæ–‡ä»¶åˆ°Jenkins
-                    bat '''
-                        if exist "%OUTPUT_DIR%\\*.apk" (
-                            echo "å½’æ¡£APKæ–‡ä»¶..."
-                            copy "%OUTPUT_DIR%\\*.apk" "%WORKSPACE%\\"
-                        )
-                    '''
-                    archiveArtifacts artifacts: '*.apk', fingerprint: true
                 }
             }
         }
@@ -113,40 +87,30 @@ pipeline {
     
     post {
         always {
-            // æ¸…ç†ä¸´æ—¶æ–‡ä»¶
             script {
-                bat '''
-                    echo "æ¸…ç†ä¸´æ—¶æ–‡ä»¶..."
-                    if exist "%WORKSPACE%\\*.apk" del "%WORKSPACE%\\*.apk"
-                '''
+                bat """
+                    echo "=== ¹¹½¨Í³¼Æ ==="
+                    echo "¹¹½¨Ê±¼ä: ${currentBuild.durationString}"
+                    echo "¹¹½¨½á¹û: ${currentBuild.result}"
+                """
             }
         }
         success {
-            emailext (
-                subject: "æ„å»ºæˆåŠŸ: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                body: """
-                <h3>æ„å»ºæˆåŠŸ!</h3>
-                <p>é¡¹ç›®: ${env.JOB_NAME}</p>
-                <p>æ„å»ºå·: #${env.BUILD_NUMBER}</p>
-                <p>APKä½ç½®: ${env.OUTPUT_DIR}</p>
-                <p>æŸ¥çœ‹è¯¦æƒ…: <a href="${env.BUILD_URL}">${env.BUILD_URL}</a></p>
-                """,
-                to: "1520153104@qq.com",
-                mimeType: "text/html"
-            )
+            script {
+                echo "?? ¹¹½¨Íê³É - Ê¹ÓÃÔöÁ¿¹¹½¨ÓÅ»¯"
+                // ¼ò»¯µÄ³É¹¦Í¨Öª£¬±ÜÃâÓÊ¼ş·¢ËÍÊ§°Üµ¼ÖÂ¹¹½¨Ê§°Ü
+            }
         }
-        failure {
-            emailext (
-                subject: "æ„å»ºå¤±è´¥: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                body: """
-                <h3>æ„å»ºå¤±è´¥!</h3>
-                <p>é¡¹ç›®: ${env.JOB_NAME}</p>
-                <p>æ„å»ºå·: #${env.BUILD_NUMBER}</p>
-                <p>è¯·æ£€æŸ¥æ„å»ºæ—¥å¿—: <a href="${env.BUILD_URL}">${env.BUILD_URL}</a></p>
-                """,
-                to: "1520153104@qq.com",
-                mimeType: "text/html"
-            )
+        unsuccessful {
+            script {
+                echo "? ¹¹½¨Ê§°Ü - Çë¼ì²éÈÕÖ¾"
+            }
         }
+    }
+    
+    options {
+        timeout(time: 20, unit: 'MINUTES') // ÉèÖÃ20·ÖÖÓ³¬Ê±
+        retry(1) // Ê§°ÜÊ±ÖØÊÔ1´Î
+        timestamps() // Ìí¼ÓÊ±¼ä´Á
     }
 }
