@@ -26,7 +26,7 @@ pipeline {
         stage('Clean Project') {
             steps {
                 script {
-                    dir('proj.android-studio') {
+                    dir(env.PROJECT_PATH) {
                         // 只清理，不构建
                         bat './gradlew clean --no-daemon --console=plain'
                     }
@@ -37,7 +37,7 @@ pipeline {
         stage('Build APK') {
             steps {
                 script {
-                    dir('proj.android-studio') {
+                    dir(env.PROJECT_PATH) {
                         // 使用优化参数一次性构建APK
                         bat '''
                             ./gradlew assembleDebug \
@@ -57,7 +57,7 @@ pipeline {
         stage('Find and Copy APK') {
             steps {
                 script {
-                    dir('proj.android-studio') {
+                    dir(env.PROJECT_PATH) {
                         bat '''
                             echo "=== 开始查找APK文件 ==="
                             echo "工作目录:"
