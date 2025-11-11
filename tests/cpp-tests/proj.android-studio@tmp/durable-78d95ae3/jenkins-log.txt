@@ -1,0 +1,1414 @@
+
+E:\cocos2d-x\tests\cpp-tests\proj.android-studio>./gradlew assembleDebug 
+
+> Configure project :cocos_demo
+WARNING:The option 'android.useDeprecatedNdk' is deprecated.
+The current default is 'false'.
+It has been removed from the current version of the Android Gradle plugin.
+NdkCompile is no longer supported
+WARNING:The option 'android.enableR8' is deprecated.
+It was removed in version 7.0 of the Android Gradle plugin.
+Please remove it from `gradle.properties`.
+[CXX5202] This app only has 32-bit [armeabi-v7a,x86] native libraries. Beginning August 1, 2019 Google Play store requires that all apps that include native libraries must provide 64-bit versions. For more information, visit https://g.co/64-bit-requirement
+[CXX5202] This app only has 32-bit [armeabi-v7a,x86] native libraries. Beginning August 1, 2019 Google Play store requires that all apps that include native libraries must provide 64-bit versions. For more information, visit https://g.co/64-bit-requirement
+WARNING:[CXX5202] This app only has 32-bit [armeabi-v7a,x86] native libraries. Beginning August 1, 2019 Google Play store requires that all apps that include native libraries must provide 64-bit versions. For more information, visit https://g.co/64-bit-requirement
+[CXX5202] This app only has 32-bit [armeabi-v7a,x86] native libraries. Beginning August 1, 2019 Google Play store requires that all apps that include native libraries must provide 64-bit versions. For more information, visit https://g.co/64-bit-requirement
+WARNING:[CXX5202] This app only has 32-bit [armeabi-v7a,x86] native libraries. Beginning August 1, 2019 Google Play store requires that all apps that include native libraries must provide 64-bit versions. For more information, visit https://g.co/64-bit-requirement
+[CXX5202] This app only has 32-bit [armeabi-v7a,x86] native libraries. Beginning August 1, 2019 Google Play store requires that all apps that include native libraries must provide 64-bit versions. For more information, visit https://g.co/64-bit-requirement
+WARNING:The specified Android SDK Build Tools version (22.0.1) is ignored, as it is below the minimum supported version (30.0.2) for Android Gradle Plugin 7.0.4.
+Android SDK Build Tools 30.0.2 will be used.
+To suppress this warning, remove "buildToolsVersion '22.0.1'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Task :cocos_demo:preBuild UP-TO-DATE
+> Task :cocos_demo:preDebugBuild UP-TO-DATE
+> Task :libcocos2dx:preBuild UP-TO-DATE
+> Task :libcocos2dx:preDebugBuild UP-TO-DATE
+> Task :libcocos2dx:packageDebugRenderscript NO-SOURCE
+> Task :cocos_demo:compileDebugRenderscript NO-SOURCE
+
+> Task :cocos_demo:generateDebugBuildConfig
+Caught exception: Couldn't start watching, error = 1: E:\cocos2d-x\tests\cpp-tests\proj.android-studio
+Unable to watch the file system for changes
+net.rubygrapefruit.platform.NativeException: Couldn't start watching, error = 1: E:\cocos2d-x\tests\cpp-tests\proj.android-studio
+	at net.rubygrapefruit.platform.internal.jni.AbstractFileEventFunctions$NativeFileWatcher.startWatching0(Native Method)
+	at net.rubygrapefruit.platform.internal.jni.AbstractFileEventFunctions$NativeFileWatcher.startWatching(AbstractFileEventFunctions.java:198)
+	at net.rubygrapefruit.platform.internal.jni.WindowsFileEventFunctions$WindowsFileWatcher.startWatching(WindowsFileEventFunctions.java:59)
+	at org.gradle.internal.watch.registry.impl.HierarchicalFileWatcherUpdater.updateWatchedHierarchies(HierarchicalFileWatcherUpdater.java:154)
+	at org.gradle.internal.watch.registry.impl.HierarchicalFileWatcherUpdater.virtualFileSystemContentsChanged(HierarchicalFileWatcherUpdater.java:92)
+	at org.gradle.internal.watch.registry.impl.DefaultFileWatcherRegistry.virtualFileSystemContentsChanged(DefaultFileWatcherRegistry.java:147)
+	at org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem.lambda$updateNotifyingListeners$0(WatchingVirtualFileSystem.java:89)
+	at org.gradle.internal.watch.registry.SnapshotCollectingDiffListener.publishSnapshotDiff(SnapshotCollectingDiffListener.java:32)
+	at org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem.lambda$updateNotifyingListeners$1(WatchingVirtualFileSystem.java:88)
+	at org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem.lambda$withWatcherChangeErrorHandling$7(WatchingVirtualFileSystem.java:313)
+	at org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem.withWatcherChangeErrorHandling(WatchingVirtualFileSystem.java:320)
+	at org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem.withWatcherChangeErrorHandling(WatchingVirtualFileSystem.java:312)
+	at org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem.updateNotifyingListeners(WatchingVirtualFileSystem.java:88)
+	at org.gradle.internal.vfs.impl.AbstractVirtualFileSystem.lambda$store$1(AbstractVirtualFileSystem.java:46)
+	at org.gradle.internal.vfs.impl.VfsRootReference.update(VfsRootReference.java:40)
+	at org.gradle.internal.vfs.impl.AbstractVirtualFileSystem.store(AbstractVirtualFileSystem.java:46)
+	at org.gradle.internal.vfs.impl.DefaultFileSystemAccess.snapshot(DefaultFileSystemAccess.java:156)
+	at org.gradle.internal.vfs.impl.DefaultFileSystemAccess.lambda$readLocation$6(DefaultFileSystemAccess.java:171)
+	at java.base/java.util.Optional.orElseGet(Optional.java:369)
+	at org.gradle.internal.vfs.impl.DefaultFileSystemAccess.lambda$readSnapshotFromLocation$7(DefaultFileSystemAccess.java:196)
+	at org.gradle.internal.vfs.impl.DefaultFileSystemAccess$StripedProducerGuard.guardByKey(DefaultFileSystemAccess.java:219)
+	at org.gradle.internal.vfs.impl.DefaultFileSystemAccess.lambda$readSnapshotFromLocation$8(DefaultFileSystemAccess.java:193)
+	at java.base/java.util.Optional.orElseGet(Optional.java:369)
+	at org.gradle.internal.vfs.impl.DefaultFileSystemAccess.readSnapshotFromLocation(DefaultFileSystemAccess.java:193)
+	at org.gradle.internal.vfs.impl.DefaultFileSystemAccess.readSnapshotFromLocation(DefaultFileSystemAccess.java:178)
+	at org.gradle.internal.vfs.impl.DefaultFileSystemAccess.readLocation(DefaultFileSystemAccess.java:171)
+	at org.gradle.internal.vfs.impl.DefaultFileSystemAccess.read(DefaultFileSystemAccess.java:83)
+	at org.gradle.internal.fingerprint.impl.DefaultFileCollectionSnapshotter$SnapshottingVisitor.visitCollection(DefaultFileCollectionSnapshotter.java:61)
+	at org.gradle.api.internal.file.AbstractOpaqueFileCollection.visitContents(AbstractOpaqueFileCollection.java:55)
+	at org.gradle.api.internal.file.AbstractFileCollection.visitStructure(AbstractFileCollection.java:330)
+	at org.gradle.api.internal.file.CompositeFileCollection.lambda$visitContents$0(CompositeFileCollection.java:119)
+	at org.gradle.api.internal.file.collections.UnpackingVisitor.visitSingleFile(UnpackingVisitor.java:111)
+	at org.gradle.api.internal.file.collections.UnpackingVisitor.add(UnpackingVisitor.java:106)
+	at org.gradle.api.internal.file.DefaultFileCollectionFactory$ResolvingFileCollection.visitChildren(DefaultFileCollectionFactory.java:333)
+	at org.gradle.api.internal.file.CompositeFileCollection.visitContents(CompositeFileCollection.java:119)
+	at org.gradle.api.internal.file.AbstractFileCollection.visitStructure(AbstractFileCollection.java:330)
+	at org.gradle.internal.fingerprint.impl.DefaultFileCollectionSnapshotter.snapshot(DefaultFileCollectionSnapshotter.java:51)
+	at org.gradle.internal.execution.DefaultOutputSnapshotter$1.visitOutputProperty(DefaultOutputSnapshotter.java:40)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter$TaskExecution.visitOutputs(ExecuteActionsTaskExecuter.java:339)
+	at org.gradle.internal.execution.DefaultOutputSnapshotter.snapshotOutputs(DefaultOutputSnapshotter.java:37)
+	at org.gradle.internal.execution.steps.CaptureStateBeforeExecutionStep.captureExecutionState(CaptureStateBeforeExecutionStep.java:160)
+	at org.gradle.internal.execution.steps.CaptureStateBeforeExecutionStep.lambda$captureExecutionStateOp$1(CaptureStateBeforeExecutionStep.java:127)
+	at org.gradle.internal.execution.steps.BuildOperationStep$1.call(BuildOperationStep.java:37)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:200)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:195)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:62)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$call$2(DefaultBuildOperationExecutor.java:79)
+	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.callWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:54)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:79)
+	at org.gradle.internal.execution.steps.BuildOperationStep.operation(BuildOperationStep.java:34)
+	at org.gradle.internal.execution.steps.CaptureStateBeforeExecutionStep.captureExecutionStateOp(CaptureStateBeforeExecutionStep.java:126)
+	at org.gradle.internal.execution.steps.CaptureStateBeforeExecutionStep.lambda$execute$0(CaptureStateBeforeExecutionStep.java:72)
+	at java.base/java.util.Optional.map(Optional.java:265)
+	at org.gradle.internal.execution.steps.CaptureStateBeforeExecutionStep.execute(CaptureStateBeforeExecutionStep.java:72)
+	at org.gradle.internal.execution.steps.CaptureStateBeforeExecutionStep.execute(CaptureStateBeforeExecutionStep.java:47)
+	at org.gradle.internal.execution.steps.SkipEmptyWorkStep.lambda$execute$2(SkipEmptyWorkStep.java:92)
+	at java.base/java.util.Optional.orElseGet(Optional.java:369)
+	at org.gradle.internal.execution.steps.SkipEmptyWorkStep.execute(SkipEmptyWorkStep.java:92)
+	at org.gradle.internal.execution.steps.SkipEmptyWorkStep.execute(SkipEmptyWorkStep.java:33)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
+	at org.gradle.internal.execution.steps.LoadExecutionStateStep.execute(LoadExecutionStateStep.java:43)
+	at org.gradle.internal.execution.steps.LoadExecutionStateStep.execute(LoadExecutionStateStep.java:31)
+	at org.gradle.internal.execution.steps.AssignWorkspaceStep.lambda$execute$0(AssignWorkspaceStep.java:40)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter$TaskExecution$2.withWorkspace(ExecuteActionsTaskExecuter.java:284)
+	at org.gradle.internal.execution.steps.AssignWorkspaceStep.execute(AssignWorkspaceStep.java:40)
+	at org.gradle.internal.execution.steps.AssignWorkspaceStep.execute(AssignWorkspaceStep.java:30)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:37)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:27)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:44)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:33)
+	at org.gradle.internal.execution.impl.DefaultExecutionEngine$1.execute(DefaultExecutionEngine.java:76)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:185)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:174)
+	at org.gradle.api.internal.tasks.execution.CleanupStaleOutputsExecuter.execute(CleanupStaleOutputsExecuter.java:109)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:56)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:200)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:195)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:62)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$call$2(DefaultBuildOperationExecutor.java:79)
+	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.callWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:54)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:79)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:74)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:402)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:389)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:382)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:368)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.lambda$run$0(DefaultPlanExecutor.java:127)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:191)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.executeNextNode(DefaultPlanExecutor.java:182)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:124)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Stopping file watching and invalidating VFS after an error happened
+
+> Task :cocos_demo:javaPreCompileDebug
+> Task :libcocos2dx:writeDebugAarMetadata
+> Task :cocos_demo:generateDebugResValues
+> Task :cocos_demo:generateDebugResources
+> Task :libcocos2dx:compileDebugRenderscript NO-SOURCE
+> Task :libcocos2dx:generateDebugResValues
+> Task :libcocos2dx:compileDebugAidl
+> Task :libcocos2dx:generateDebugResources
+> Task :cocos_demo:checkDebugAarMetadata
+> Task :libcocos2dx:packageDebugResources
+> Task :cocos_demo:compileDebugAidl NO-SOURCE
+> Task :cocos_demo:createDebugCompatibleScreenManifests
+> Task :cocos_demo:extractDeepLinksDebug
+> Task :libcocos2dx:extractDeepLinksDebug
+> Task :libcocos2dx:processDebugManifest
+> Task :libcocos2dx:compileDebugLibraryResources
+> Task :libcocos2dx:generateDebugBuildConfig
+> Task :libcocos2dx:javaPreCompileDebug
+> Task :libcocos2dx:parseDebugLocalResources
+> Task :cocos_demo:mergeDebugResources
+
+> Task :cocos_demo:processDebugMainManifest
+[androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-3\c56953a6de5624311476a40281045890\transformed\vectordrawable-animated-1.0.0\AndroidManifest.xml Warning:
+	Package name 'androidx.vectordrawable' used in: androidx.vectordrawable:vectordrawable-animated:1.0.0, androidx.vectordrawable:vectordrawable:1.0.0.
+
+> Task :cocos_demo:processDebugManifest
+> Task :libcocos2dx:generateDebugRFile
+> Task :cocos_demo:configureNdkBuildDebug
+
+> Task :cocos_demo:buildNdkBuildDebug
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/main.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes\AppDelegate.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:59:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../base/ZipUtils.h:36:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/android/CCFileUtils-android.h:62:10: warning: 'init' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     bool init();
+C/C++:          ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCFileUtils.h:494:18: note: overridden virtual function is here
+C/C++:     virtual bool init();
+C/C++:                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/main.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes\AppDelegate.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:59:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../base/ZipUtils.h:36:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/android/CCFileUtils-android.h:80:25: warning: 'getWritablePath' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     virtual std::string getWritablePath() const;
+C/C++:                         ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCFileUtils.h:299:25: note: overridden virtual function is here
+C/C++:     virtual std::string getWritablePath() const = 0;
+C/C++:                         ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/main.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes\AppDelegate.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:59:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../base/ZipUtils.h:36:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/android/CCFileUtils-android.h:81:18: warning: 'isAbsolutePath' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     virtual bool isAbsolutePath(const std::string& strPath) const;
+C/C++:                  ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCFileUtils.h:415:18: note: overridden virtual function is here
+C/C++:     virtual bool isAbsolutePath(const std::string& path) const;
+C/C++:                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/main.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes\AppDelegate.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:208:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../platform/android/CCApplication-android.h:54:10: warning: 'setAnimationInterval' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     void setAnimationInterval(float interval);
+C/C++:          ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCApplicationProtocol.h:104:18: note: overridden virtual function is here
+C/C++:     virtual void setAnimationInterval(float interval) = 0;
+C/C++:                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/main.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes\AppDelegate.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:208:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../platform/android/CCApplication-android.h:74:26: warning: 'getCurrentLanguage' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     virtual LanguageType getCurrentLanguage();
+C/C++:                          ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCApplicationProtocol.h:122:26: note: overridden virtual function is here
+C/C++:     virtual LanguageType getCurrentLanguage() = 0;
+C/C++:                          ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/main.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes\AppDelegate.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:208:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../platform/android/CCApplication-android.h:80:26: warning: 'getCurrentLanguageCode' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     virtual const char * getCurrentLanguageCode();
+C/C++:                          ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCApplicationProtocol.h:130:26: note: overridden virtual function is here
+C/C++:     virtual const char * getCurrentLanguageCode() = 0;
+C/C++:                          ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/main.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes\AppDelegate.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:208:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../platform/android/CCApplication-android.h:85:22: warning: 'getTargetPlatform' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     virtual Platform getTargetPlatform();
+C/C++:                      ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCApplicationProtocol.h:137:22: note: overridden virtual function is here
+C/C++:     virtual Platform getTargetPlatform() = 0;
+C/C++:                      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/main.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes\AppDelegate.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:208:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../platform/android/CCApplication-android.h:97:18: warning: 'openURL' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     virtual bool openURL(const std::string &url);
+C/C++:                  ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCApplicationProtocol.h:153:18: note: overridden virtual function is here
+C/C++:     virtual bool openURL(const std::string &url) = 0;
+C/C++:                  ^
+C/C++: 8 warnings generated.
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.h:4:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:59:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../base/ZipUtils.h:36:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/android/CCFileUtils-android.h:62:10: warning: 'init' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     bool init();
+C/C++:          ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCFileUtils.h:494:18: note: overridden virtual function is here
+C/C++:     virtual bool init();
+C/C++:                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.h:4:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:59:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../base/ZipUtils.h:36:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/android/CCFileUtils-android.h:80:25: warning: 'getWritablePath' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     virtual std::string getWritablePath() const;
+C/C++:                         ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCFileUtils.h:299:25: note: overridden virtual function is here
+C/C++:     virtual std::string getWritablePath() const = 0;
+C/C++:                         ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.h:4:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:59:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../base/ZipUtils.h:36:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/android/CCFileUtils-android.h:81:18: warning: 'isAbsolutePath' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     virtual bool isAbsolutePath(const std::string& strPath) const;
+C/C++:                  ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCFileUtils.h:415:18: note: overridden virtual function is here
+C/C++:     virtual bool isAbsolutePath(const std::string& path) const;
+C/C++:                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.h:4:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:208:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../platform/android/CCApplication-android.h:54:10: warning: 'setAnimationInterval' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     void setAnimationInterval(float interval);
+C/C++:          ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCApplicationProtocol.h:104:18: note: overridden virtual function is here
+C/C++:     virtual void setAnimationInterval(float interval) = 0;
+C/C++:                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.h:4:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:208:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../platform/android/CCApplication-android.h:74:26: warning: 'getCurrentLanguage' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     virtual LanguageType getCurrentLanguage();
+C/C++:                          ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCApplicationProtocol.h:122:26: note: overridden virtual function is here
+C/C++:     virtual LanguageType getCurrentLanguage() = 0;
+C/C++:                          ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.h:4:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:208:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../platform/android/CCApplication-android.h:80:26: warning: 'getCurrentLanguageCode' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     virtual const char * getCurrentLanguageCode();
+C/C++:                          ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCApplicationProtocol.h:130:26: note: overridden virtual function is here
+C/C++:     virtual const char * getCurrentLanguageCode() = 0;
+C/C++:                          ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.h:4:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:208:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../platform/android/CCApplication-android.h:85:22: warning: 'getTargetPlatform' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     virtual Platform getTargetPlatform();
+C/C++:                      ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCApplicationProtocol.h:137:22: note: overridden virtual function is here
+C/C++:     virtual Platform getTargetPlatform() = 0;
+C/C++:                      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.h:4:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:208:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../platform/android/CCApplication-android.h:97:18: warning: 'openURL' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     virtual bool openURL(const std::string &url);
+C/C++:                  ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCApplicationProtocol.h:153:18: note: overridden virtual function is here
+C/C++:     virtual bool openURL(const std::string &url) = 0;
+C/C++:                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.h:4:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:20:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/reader.h:23:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/stack.h:38:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.h:4:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:20:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/reader.h:23:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/stack.h:38:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.h:4:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:20:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/reader.h:23:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/stack.h:60:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.h:4:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:20:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/reader.h:23:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/stack.h:60:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.h:4:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:62:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.h:4:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:62:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.h:4:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:438:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.h:4:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:438:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.h:4:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:600:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.h:4:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:600:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.h:4:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1042:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.h:4:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1042:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.h:4:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1303:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.h:4:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1303:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.h:4:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1738:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.h:4:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1738:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.h:4:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1757:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.cpp:1:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/ActionManagerTest.h:4:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionManagerTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1757:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: 26 warnings generated.
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:59:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../base/ZipUtils.h:36:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/android/CCFileUtils-android.h:62:10: warning: 'init' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     bool init();
+C/C++:          ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCFileUtils.h:494:18: note: overridden virtual function is here
+C/C++:     virtual bool init();
+C/C++:                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:59:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../base/ZipUtils.h:36:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/android/CCFileUtils-android.h:80:25: warning: 'getWritablePath' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     virtual std::string getWritablePath() const;
+C/C++:                         ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCFileUtils.h:299:25: note: overridden virtual function is here
+C/C++:     virtual std::string getWritablePath() const = 0;
+C/C++:                         ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:59:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../base/ZipUtils.h:36:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/android/CCFileUtils-android.h:81:18: warning: 'isAbsolutePath' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     virtual bool isAbsolutePath(const std::string& strPath) const;
+C/C++:                  ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCFileUtils.h:415:18: note: overridden virtual function is here
+C/C++:     virtual bool isAbsolutePath(const std::string& path) const;
+C/C++:                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:208:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../platform/android/CCApplication-android.h:54:10: warning: 'setAnimationInterval' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     void setAnimationInterval(float interval);
+C/C++:          ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCApplicationProtocol.h:104:18: note: overridden virtual function is here
+C/C++:     virtual void setAnimationInterval(float interval) = 0;
+C/C++:                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:208:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../platform/android/CCApplication-android.h:74:26: warning: 'getCurrentLanguage' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     virtual LanguageType getCurrentLanguage();
+C/C++:                          ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCApplicationProtocol.h:122:26: note: overridden virtual function is here
+C/C++:     virtual LanguageType getCurrentLanguage() = 0;
+C/C++:                          ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:208:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../platform/android/CCApplication-android.h:80:26: warning: 'getCurrentLanguageCode' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     virtual const char * getCurrentLanguageCode();
+C/C++:                          ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCApplicationProtocol.h:130:26: note: overridden virtual function is here
+C/C++:     virtual const char * getCurrentLanguageCode() = 0;
+C/C++:                          ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:208:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../platform/android/CCApplication-android.h:85:22: warning: 'getTargetPlatform' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     virtual Platform getTargetPlatform();
+C/C++:                      ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCApplicationProtocol.h:137:22: note: overridden virtual function is here
+C/C++:     virtual Platform getTargetPlatform() = 0;
+C/C++:                      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:208:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../platform/android/CCApplication-android.h:97:18: warning: 'openURL' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     virtual bool openURL(const std::string &url);
+C/C++:                  ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCApplicationProtocol.h:153:18: note: overridden virtual function is here
+C/C++:     virtual bool openURL(const std::string &url) = 0;
+C/C++:                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:20:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/reader.h:23:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/stack.h:38:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:20:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/reader.h:23:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/stack.h:38:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:20:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/reader.h:23:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/stack.h:60:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:20:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/reader.h:23:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/stack.h:60:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:62:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:62:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:438:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:438:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:600:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:600:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1042:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1042:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1303:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1303:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1738:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1738:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1757:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/ActionsEaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsEaseTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1757:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: 26 warnings generated.
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:59:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../base/ZipUtils.h:36:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/android/CCFileUtils-android.h:62:10: warning: 'init' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     bool init();
+C/C++:          ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCFileUtils.h:494:18: note: overridden virtual function is here
+C/C++:     virtual bool init();
+C/C++:                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:59:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../base/ZipUtils.h:36:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/android/CCFileUtils-android.h:80:25: warning: 'getWritablePath' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     virtual std::string getWritablePath() const;
+C/C++:                         ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCFileUtils.h:299:25: note: overridden virtual function is here
+C/C++:     virtual std::string getWritablePath() const = 0;
+C/C++:                         ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:59:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../base/ZipUtils.h:36:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/android/CCFileUtils-android.h:81:18: warning: 'isAbsolutePath' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     virtual bool isAbsolutePath(const std::string& strPath) const;
+C/C++:                  ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCFileUtils.h:415:18: note: overridden virtual function is here
+C/C++:     virtual bool isAbsolutePath(const std::string& path) const;
+C/C++:                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:208:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../platform/android/CCApplication-android.h:54:10: warning: 'setAnimationInterval' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     void setAnimationInterval(float interval);
+C/C++:          ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCApplicationProtocol.h:104:18: note: overridden virtual function is here
+C/C++:     virtual void setAnimationInterval(float interval) = 0;
+C/C++:                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:208:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../platform/android/CCApplication-android.h:74:26: warning: 'getCurrentLanguage' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     virtual LanguageType getCurrentLanguage();
+C/C++:                          ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCApplicationProtocol.h:122:26: note: overridden virtual function is here
+C/C++:     virtual LanguageType getCurrentLanguage() = 0;
+C/C++:                          ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:208:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../platform/android/CCApplication-android.h:80:26: warning: 'getCurrentLanguageCode' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     virtual const char * getCurrentLanguageCode();
+C/C++:                          ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCApplicationProtocol.h:130:26: note: overridden virtual function is here
+C/C++:     virtual const char * getCurrentLanguageCode() = 0;
+C/C++:                          ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:208:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../platform/android/CCApplication-android.h:85:22: warning: 'getTargetPlatform' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     virtual Platform getTargetPlatform();
+C/C++:                      ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCApplicationProtocol.h:137:22: note: overridden virtual function is here
+C/C++:     virtual Platform getTargetPlatform() = 0;
+C/C++:                      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:208:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../platform/android/CCApplication-android.h:97:18: warning: 'openURL' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     virtual bool openURL(const std::string &url);
+C/C++:                  ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCApplicationProtocol.h:153:18: note: overridden virtual function is here
+C/C++:     virtual bool openURL(const std::string &url) = 0;
+C/C++:                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:20:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/reader.h:23:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/stack.h:38:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:20:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/reader.h:23:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/stack.h:38:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:20:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/reader.h:23:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/stack.h:60:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:20:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/reader.h:23:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/stack.h:60:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:62:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:62:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:438:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:438:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:600:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:600:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1042:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1042:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1303:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1303:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1738:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1738:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1757:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/ActionsProgressTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsProgressTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1757:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: 26 warnings generated.
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:59:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../base/ZipUtils.h:36:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/android/CCFileUtils-android.h:62:10: warning: 'init' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     bool init();
+C/C++:          ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCFileUtils.h:494:18: note: overridden virtual function is here
+C/C++:     virtual bool init();
+C/C++:                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:59:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../base/ZipUtils.h:36:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/android/CCFileUtils-android.h:80:25: warning: 'getWritablePath' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     virtual std::string getWritablePath() const;
+C/C++:                         ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCFileUtils.h:299:25: note: overridden virtual function is here
+C/C++:     virtual std::string getWritablePath() const = 0;
+C/C++:                         ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:59:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../base/ZipUtils.h:36:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/android/CCFileUtils-android.h:81:18: warning: 'isAbsolutePath' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     virtual bool isAbsolutePath(const std::string& strPath) const;
+C/C++:                  ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCFileUtils.h:415:18: note: overridden virtual function is here
+C/C++:     virtual bool isAbsolutePath(const std::string& path) const;
+C/C++:                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:208:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../platform/android/CCApplication-android.h:54:10: warning: 'setAnimationInterval' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     void setAnimationInterval(float interval);
+C/C++:          ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCApplicationProtocol.h:104:18: note: overridden virtual function is here
+C/C++:     virtual void setAnimationInterval(float interval) = 0;
+C/C++:                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:208:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../platform/android/CCApplication-android.h:74:26: warning: 'getCurrentLanguage' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     virtual LanguageType getCurrentLanguage();
+C/C++:                          ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCApplicationProtocol.h:122:26: note: overridden virtual function is here
+C/C++:     virtual LanguageType getCurrentLanguage() = 0;
+C/C++:                          ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:208:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../platform/android/CCApplication-android.h:80:26: warning: 'getCurrentLanguageCode' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     virtual const char * getCurrentLanguageCode();
+C/C++:                          ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCApplicationProtocol.h:130:26: note: overridden virtual function is here
+C/C++:     virtual const char * getCurrentLanguageCode() = 0;
+C/C++:                          ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:208:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../platform/android/CCApplication-android.h:85:22: warning: 'getTargetPlatform' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     virtual Platform getTargetPlatform();
+C/C++:                      ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCApplicationProtocol.h:137:22: note: overridden virtual function is here
+C/C++:     virtual Platform getTargetPlatform() = 0;
+C/C++:                      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/../BaseTest.h:28:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\cocos2d.h:208:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/../platform/android/CCApplication-android.h:97:18: warning: 'openURL' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+C/C++:     virtual bool openURL(const std::string &url);
+C/C++:                  ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../cocos/3d/..\platform/CCApplicationProtocol.h:153:18: note: overridden virtual function is here
+C/C++:     virtual bool openURL(const std::string &url) = 0;
+C/C++:                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:20:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/reader.h:23:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/stack.h:38:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:20:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/reader.h:23:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/stack.h:38:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:20:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/reader.h:23:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/stack.h:60:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:20:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/reader.h:23:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/stack.h:60:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/internal/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:62:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:62:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:438:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:438:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:600:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:600:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1042:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1042:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1303:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1303:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1738:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1738:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1757:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: #if RAPIDJSON_HAS_CXX11_RVALUE_REFS
+C/C++:     ^
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:6: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:      ^
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.cpp:26:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/ActionsTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../Classes/ActionsTest/../BaseTest.h:29:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../..\extensions/cocos-ext.h:16:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/AssetsManagerEx.h:38:
+C/C++: In file included from E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../extensions/./assets-manager/Manifest.h:37:
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/document.h:1757:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+C/C++: E:/cocos2d-x/tests/cpp-tests/proj.android-studio/app/jni/../../../../../external/flatbuffers/..\json/error/../rapidjson.h:442:34: note: expanded from macro 'RAPIDJSON_HAS_CXX11_RVALUE_REFS'
+C/C++:     (defined(_LIBCPP_VERSION) || defined(__GLIBCXX__) && __GLIBCXX__ >= 20080306)
+C/C++:                                  ^
+C/C++: 26 warnings generated.
+
+> Task :cocos_demo:processDebugManifestForPackage

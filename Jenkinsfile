@@ -39,14 +39,16 @@ pipeline {
             steps {
                 script {
                     // 查找APK文件
-                    def apkFiles = findFiles(glob: '**/*.apk')
-                    
-                    // 复制到目标目录
-                    bat "xcopy \"${apkFiles[0].path}\" \"${env.OUTPUT_DIR}\" /Y"
-                    
-                    // 记录构建信息
-                    echo "APK已生成并复制到: ${env.OUTPUT_DIR}"
-                    echo "文件名: ${apkFiles[0].name}"
+                    def files = bat(script: 'dir /b/s *.apk', returnStdout: true).trim()
+					if (files) 
+					{
+						// 复制到目标目录
+						bat "xcopy \"${apkFiles[0].path}\" \"${env.OUTPUT_DIR}\" /Y"
+						
+						// 记录构建信息
+						echo "APK已生成并复制到: ${env.OUTPUT_DIR}"
+						echo "文件名: ${apkFiles[0].name}"
+					}
                 }
             }
         }
