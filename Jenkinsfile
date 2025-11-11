@@ -50,6 +50,7 @@ pipeline {
                     dir(env.PROJECT_PATH) {
                         // 使用增量构建，只编译变更的部分
                         bat """
+							chcp 65001 >nul
                             gradlew assembleDebug ^
                                 --configure-on-demand ^
                                 --parallel ^
@@ -70,6 +71,7 @@ pipeline {
                 script {
                     dir(env.PROJECT_PATH) {
                         bat """
+							chcp 65001 >nul
                             if exist "app\\\\build\\\\outputs\\\\apk\\\\debug\\\\*.apk" (
                                 echo "快速复制APK文件..."
                                 copy "app\\\\build\\\\outputs\\\\apk\\\\debug\\\\*.apk" "${OUTPUT_DIR}\\\\" >nul
@@ -89,6 +91,7 @@ pipeline {
         always {
             script {
                 bat """
+					chcp 65001 >nul
                     echo "=== 构建统计 ==="
                     echo "构建时间: ${currentBuild.durationString}"
                     echo "构建结果: ${currentBuild.result}"
