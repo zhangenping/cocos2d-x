@@ -115,6 +115,9 @@ TestController::TestController()
     _touchListener->onTouchBegan = CC_CALLBACK_2(TestController::blockTouchBegan, this);
     _touchListener->setSwallowTouches(true);
 
+    int a =3;
+    a++;
+
     _director->getEventDispatcher()->addEventListenerWithFixedPriority(_touchListener, -200);
 }
 
