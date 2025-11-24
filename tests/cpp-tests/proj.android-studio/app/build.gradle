@@ -7,7 +7,7 @@ android
     defaultConfig
             {
                 applicationId "com.cocos.test"
-                minSdkVersion 14
+                minSdkVersion 21
                 targetSdkVersion 28
                 versionCode 1
                 versionName "9.9.9.9999.999"
@@ -104,4 +104,24 @@ dependencies
     // (注：从2.1.5开始要分开Bugly SDK和NDK的配置）
     implementation 'com.tencent.bugly:crashreport:3.3.3'
     implementation 'com.tencent.bugly:nativecrashreport:3.7.7'
+
+    implementation "com.tencent.shiply:shiplyintegration:$shiply_integration_version"
+
+    implementation "com.tencent.shiply:rdelivery:$rdelivery_version"
+
+    implementation "com.tencent.shiply:reshub-sdk:$reshub_version"       // ResHub核心SDK
+    implementation "com.tencent.shiply:reshub-net:$reshub_version"       // 可选，默认网络下载实现
+    implementation "com.tencent.shiply:reshub-report:$reshub_version"    // 可选，默认上报SDK
+    implementation "com.tencent.shiply:reshub-patch-sdk:$reshub_version" // 可选，差量更新SDK
+
+    implementation("com.tencent.shiply:upgrade:$upgrade_version")
+    implementation("com.tencent.shiply:upgrade-ui:$upgrade_version")
+    implementation("com.tencent.shiply:upgrade-diff-pkg-patch:$upgrade_version")
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
+
+// 接入RFix补丁组件
+apply from: rootProject.file('gradle/android-rfix-integration.gradle')
+apply from: rootProject.file('gradle/android-auto-backup.gradle')

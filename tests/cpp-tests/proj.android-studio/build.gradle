@@ -4,11 +4,24 @@ buildscript {
     repositories {
         jcenter()
         google()
+        mavenCentral()
+//        maven { url "https://tencent-tds-maven.pkg.coding.net/repository/shiply/repo/" }
+        maven { url "https://maven.cnb.cool/tencent-tds/shiply-public/-/packages/" }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:7.0.4' // 更新Android插件版本（如果是Android项目）
         // 配置自动上传符号表插件，注：为了能快速并准确地定位用户APP发生Crash的代码位置，Bugly使用符号表对APP发生Crash的程序堆栈进行解析和还原
         classpath 'com.tencent.bugly:symtabfileuploader:latest.release'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.21"
+        // 接入RFix补丁组件
+        classpath "com.tencent.rfix:RFix-gradle-plugin:${RFIX_VERSION}"
+
+        // 添加该依赖是为了解决一个Android插件的强转异常：java.util.function.Supplier
+        // https://github.com/GoogleCloudPlatform/artifact-registry-maven-tools/issues/27
+        classpath 'com.google.guava:guava:27.1-jre'
+
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -18,6 +31,9 @@ allprojects {
     repositories {
         jcenter()
         google()
+        mavenCentral()
+//        maven { url "https://tencent-tds-maven.pkg.coding.net/repository/shiply/repo" }
+        maven { url "https://maven.cnb.cool/tencent-tds/shiply-public/-/packages/" }
     }
 }
 

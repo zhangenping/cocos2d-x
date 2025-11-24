@@ -42,6 +42,10 @@ public class MainActivity extends Cocos2dxActivity {
         }
     }
 
+    private void TDSConfigHandle() {
+
+    }
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }

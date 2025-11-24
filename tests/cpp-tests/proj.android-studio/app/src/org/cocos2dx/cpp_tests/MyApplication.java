@@ -3,7 +3,7 @@ package org.cocos2dx.cpp_tests;
 import com.tencent.bugly.crashreport.CrashReport;
 
 import android.app.Application;
-
+import org.cocos2dx.cpp_tests.InitUtil;
 /**
  * Created by wenjiewu on 2016/5/23.
  */
@@ -20,5 +20,7 @@ public class MyApplication extends Application {
         //CrashReport.initCrashReport(getApplicationContext(), "9ad897e06b", true);
         CrashReport.UserStrategy userStrategy = new CrashReport.UserStrategy(this);
         CrashReport.initCrashReport(this,"78a6d35ae7",true,userStrategy);
+
+        InitUtil.initShiplySDK(this, null);
     }
 }
