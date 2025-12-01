@@ -302,6 +302,7 @@ static TestCase* getTestCase(Scene* scene)
 
 void TestSuite::runThisTest()
 {
+    //std::string ss = FMT("{}", 1);
     if (!_childTestNames.empty())
     {
         TestController::getInstance()->setCurrTestSuite(this);
