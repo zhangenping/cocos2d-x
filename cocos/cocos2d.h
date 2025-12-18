@@ -64,6 +64,7 @@ THE SOFTWARE.
 #include "base/ccUTF8.h"
 #include "base/ccUtils.h"
 #include "base/FmtExtension.h"
+#include "base/LogELK.h"
 
 // EventDispatcher
 #include "base/CCEventAcceleration.h"

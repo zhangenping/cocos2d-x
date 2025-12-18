@@ -61,6 +61,15 @@ bool AppDelegate::applicationDidFinishLaunching()
     // FIXME:: but at this point, the director is already initialized
     Configuration::getInstance()->loadConfigFile("configs/config-example.plist");
 
+
+    std::string esUrl = "https://localhost:9200";
+    // 替换为你的ES API Key（需有写入索引的权限）
+    std::string apiKey = "NWhlaEs1c0JOVnZ2TV9yOTRnVU86RTNDX0QwUnFTck92UGl5SmVjVDFFQQ==";
+    // 初始化ELK日志模块
+    ELKLogger::getInstance()->init(esUrl, apiKey);
+
+    ELK_LOG_WARN("AppDelegate", "Application started successfully");
+
     // initialize director
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();

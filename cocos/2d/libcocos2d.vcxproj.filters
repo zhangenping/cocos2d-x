@@ -1944,6 +1944,9 @@
     <ClCompile Include="..\base\FmtExtension.cpp">
       <Filter>base</Filter>
     </ClCompile>
+    <ClCompile Include="..\base\LogELK.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\physics\CCPhysicsBody.h">
@@ -3792,6 +3795,9 @@
       <Filter>ui</Filter>
     </ClInclude>
     <ClInclude Include="..\base\FmtExtension.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\LogELK.h">
       <Filter>base</Filter>
     </ClInclude>
   </ItemGroup>
