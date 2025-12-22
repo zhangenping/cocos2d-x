@@ -39,3 +39,8 @@ elasticsearch.ssl.certificateAuthorities: [ "E:/ELK/elasticsearch-8.11.0/config/
 都启动后 去kibana网站生成api key即可给项目用
 cocos api key：
 NWhlaEs1c0JOVnZ2TV9yOTRnVU86RTNDX0QwUnFTck92UGl5SmVjVDFFQQ==
+
+
+tracy:
+https://github.com/wolfpld/tracy/releases
+下载后cmake编译out里面生成lib和头文件嵌入项目即可

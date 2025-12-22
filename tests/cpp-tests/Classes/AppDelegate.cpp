@@ -1,4 +1,4 @@
-/****************************************************************************
+ï»¿/****************************************************************************
  Copyright (c) 2013      cocos2d-x.org
  Copyright (c) 2013-2015 Chukong Technologies Inc.
 
@@ -29,7 +29,7 @@
 #include "controller.h"
 #include "cocostudio/CocoStudio.h"
 #include "extensions/cocos-ext.h"
-
+#include "tracy/tracy/Tracy.hpp"
 USING_NS_CC;
 
 AppDelegate::AppDelegate()
@@ -56,6 +56,10 @@ void AppDelegate::initGLContextAttrs()
 
 bool AppDelegate::applicationDidFinishLaunching()
 {
+    // ä»…ä½¿ç”¨ZoneScopedå’ŒFrameMarkè¿™ä¸¤ä¸ªæœ€åŸºç¡€çš„API
+    ZoneScopedN("AppLaunch");
+
+
     // As an example, load config file
     // FIXME:: This should be loaded before the Director is initialized,
     // FIXME:: but at this point, the director is already initialized
@@ -63,9 +67,9 @@ bool AppDelegate::applicationDidFinishLaunching()
 
 
     std::string esUrl = "https://localhost:9200";
-    // Ìæ»»ÎªÄãµÄES API Key£¨ÐèÓÐÐ´ÈëË÷ÒýµÄÈ¨ÏÞ£©
+    // æ›¿æ¢ä¸ºä½ çš„ES API Keyï¼ˆéœ€æœ‰å†™å…¥ç´¢å¼•çš„æƒé™ï¼‰
     std::string apiKey = "NWhlaEs1c0JOVnZ2TV9yOTRnVU86RTNDX0QwUnFTck92UGl5SmVjVDFFQQ==";
-    // ³õÊ¼»¯ELKÈÕÖ¾Ä£¿é
+    // åˆå§‹åŒ–ELKæ—¥å¿—æ¨¡å—
     ELKLogger::getInstance()->init(esUrl, apiKey);
 
     ELK_LOG_WARN("AppDelegate", "Application started successfully");
