@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36301.6 d17.14
+VisualStudioVersion = 17.14.36301.6
 MinimumVisualStudioVersion = 12.0.21005.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpp-tests", "..\tests\cpp-tests\proj.win32\cpp-tests.vcxproj", "{76A39BB2-9B84-4C65-98A5-654D86B86F2A}"
 EndProject
@@ -34,6 +34,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "performance-tests", "..\tests\performance-tests\proj.win32\performance-tests.vcxproj", "{2778C02D-DDD0-4A92-A6AA-C3E2B7EDE3FF}"
 EndProject
 Project("{5697748A-77EF-44CA-8824-4F5637E5945B}") = "lua-tests-lua", "..\tests\lua-tests\lua-tests-lua.luaproj", "{E439935D-B2A2-46AE-856D-2AA408428F33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excel2Config", "..\external\Excel2Config\Excel2Config.csproj", "{447E9AEC-CA3B-EFC1-14A0-86421B881CF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -181,6 +183,18 @@ Global
 		{E439935D-B2A2-46AE-856D-2AA408428F33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E439935D-B2A2-46AE-856D-2AA408428F33}.Release|ARM.ActiveCfg = Release|Any CPU
 		{E439935D-B2A2-46AE-856D-2AA408428F33}.Release|Win32.ActiveCfg = Release|Any CPU
+		{447E9AEC-CA3B-EFC1-14A0-86421B881CF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{447E9AEC-CA3B-EFC1-14A0-86421B881CF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{447E9AEC-CA3B-EFC1-14A0-86421B881CF2}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{447E9AEC-CA3B-EFC1-14A0-86421B881CF2}.Debug|ARM.Build.0 = Debug|Any CPU
+		{447E9AEC-CA3B-EFC1-14A0-86421B881CF2}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{447E9AEC-CA3B-EFC1-14A0-86421B881CF2}.Debug|Win32.Build.0 = Debug|Any CPU
+		{447E9AEC-CA3B-EFC1-14A0-86421B881CF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{447E9AEC-CA3B-EFC1-14A0-86421B881CF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{447E9AEC-CA3B-EFC1-14A0-86421B881CF2}.Release|ARM.ActiveCfg = Release|Any CPU
+		{447E9AEC-CA3B-EFC1-14A0-86421B881CF2}.Release|ARM.Build.0 = Release|Any CPU
+		{447E9AEC-CA3B-EFC1-14A0-86421B881CF2}.Release|Win32.ActiveCfg = Release|Any CPU
+		{447E9AEC-CA3B-EFC1-14A0-86421B881CF2}.Release|Win32.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -190,6 +204,7 @@ Global
 		{929480E7-23C0-4DF6-8456-096D71547116} = {92D54E36-7916-48EF-A951-224DD3B25442}
 		{012DFF48-A13F-4F52-B07B-F8B9D21CE95B} = {92D54E36-7916-48EF-A951-224DD3B25442}
 		{41E34993-647E-4282-8384-4AB1AE31A452} = {92D54E36-7916-48EF-A951-224DD3B25442}
+		{447E9AEC-CA3B-EFC1-14A0-86421B881CF2} = {92D54E36-7916-48EF-A951-224DD3B25442}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {112C4CAC-1B24-4548-A210-09E7147D3B4B}

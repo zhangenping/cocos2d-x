@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Excel2Config": {
+      "commandName": "Project",
+      "commandLineArgs": "E:\\cocos2d-x\\tests\\cpp-tests\\Classes\\Proto\\Excel2Config.exe --excel_path=ini\\client\\common\\datatable --output_path=OutPut --to_protobuf=all --protoc=E:\\cocos2d-x\\tests\\cpp-tests\\Classes\\Proto\\protoc.exe --protoc_cmd=",
+      "workingDirectory": "E:\\cocos2d-x\\tests\\cpp-tests\\Resources"
+    }
+  }
+}

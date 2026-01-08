@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ExcelDataReader" Version="3.6.0" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="6.0.0" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command=":: 1. 定义目标目录（向上翻5层，修正Class→Classes，基于$(OutDir)计算绝对路径）&#xD;&#xA;:: $(OutDir) = 项目输出目录（如bin/Debug/net6.0/），../../../../../ 表示向上翻5层&#xD;&#xA;set &quot;TARGET_DIR=$(OutDir)../../../../../tests/cpp-tests/Classes/Proto&quot;&#xD;&#xA;&#xD;&#xA;:: 2. 转换为绝对路径（避免相对路径层级计算错误，核心兜底）&#xD;&#xA;for /f &quot;delims=&quot; %25%25i in (&quot;%25TARGET_DIR%25&quot;) do set &quot;TARGET_DIR_ABS=%25%25~fi&quot;&#xD;&#xA;&#xD;&#xA;:: 3. 确保目标目录存在（不存在则创建）&#xD;&#xA;if not exist &quot;%25TARGET_DIR_ABS%25&quot; mkdir &quot;%25TARGET_DIR_ABS%25&quot;&#xD;&#xA;&#xD;&#xA;:: 4. 精准复制EXE（明确指定项目名+.exe，彻底避开DLL）&#xD;&#xA;:: $(ProjectName) = 你的项目名（如Excel2Config），确保复制的是.exe而非.dll&#xD;&#xA;copy /Y &quot;$(OutDir)$(ProjectName).exe&quot; &quot;%25TARGET_DIR_ABS%25\&quot;&#xD;&#xA;&#xD;&#xA;:: 5. 输出日志（验证路径和复制的文件，方便排查）&#xD;&#xA;echo 【生成后事件】目标绝对路径：%25TARGET_DIR_ABS%25&#xD;&#xA;echo 【生成后事件】已复制 EXE 文件：$(ProjectName).exe 到 %25TARGET_DIR_ABS%25" />
+  </Target>
+
+</Project>
