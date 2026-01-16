@@ -1,0 +1,1157 @@
+config [
+  {
+    key: 1,
+    value {
+      id: 1,
+      item_id: 1033232,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 5,
+      req_2: 0,
+      price_type: 3,
+      price: 15,
+      limit_type: 1,
+      limit_amount: 1
+    }
+  },
+
+  {
+    key: 2,
+    value {
+      id: 2,
+      item_id: 1033062,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 10,
+      req_2: 0,
+      price_type: 3,
+      price: 25,
+      limit_type: 1,
+      limit_amount: 1
+    }
+  },
+
+  {
+    key: 3,
+    value {
+      id: 3,
+      item_id: 1595076,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 5,
+      req_2: 0,
+      price_type: 3,
+      price: 40,
+      limit_type: 1,
+      limit_amount: 1
+    }
+  },
+
+  {
+    key: 4,
+    value {
+      id: 4,
+      item_id: 1508513,
+      shop_type: 1,
+      req_type: 0,
+      event_id: 1,
+      req_1: 0,
+      req_2: 0,
+      price_type: 3,
+      price: 15,
+      limit_type: 1,
+      limit_amount: 2
+    }
+  },
+
+  {
+    key: 5,
+    value {
+      id: 5,
+      item_id: 1507587,
+      shop_type: 1,
+      req_type: 0,
+      event_id: 1,
+      req_1: 0,
+      req_2: 0,
+      price_type: 3,
+      price: 10,
+      limit_type: 1,
+      limit_amount: 1
+    }
+  },
+
+  {
+    key: 6,
+    value {
+      id: 6,
+      item_id: 1507588,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 5,
+      req_2: 0,
+      price_type: 3,
+      price: 20,
+      limit_type: 1,
+      limit_amount: 1
+    }
+  },
+
+  {
+    key: 7,
+    value {
+      id: 7,
+      item_id: 1507589,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 10,
+      req_2: 0,
+      price_type: 3,
+      price: 30,
+      limit_type: 1,
+      limit_amount: 1
+    }
+  },
+
+  {
+    key: 8,
+    value {
+      id: 8,
+      item_id: 1029085,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 5,
+      req_2: 0,
+      price_type: 3,
+      price: 25,
+      limit_type: 1,
+      limit_amount: 1
+    }
+  },
+
+  {
+    key: 9,
+    value {
+      id: 9,
+      item_id: 1510831,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 10,
+      req_2: 0,
+      price_type: 3,
+      price: 90,
+      limit_type: 2,
+      limit_amount: 3
+    }
+  },
+
+  {
+    key: 10,
+    value {
+      id: 10,
+      item_id: 1508376,
+      shop_type: 1,
+      req_type: 0,
+      event_id: 1,
+      req_1: 0,
+      req_2: 0,
+      price_type: 3,
+      price: 1,
+      limit_type: 1,
+      limit_amount: 100
+    }
+  },
+
+  {
+    key: 11,
+    value {
+      id: 11,
+      item_id: 1507610,
+      shop_type: 1,
+      req_type: 0,
+      event_id: 1,
+      req_1: 0,
+      req_2: 0,
+      price_type: 3,
+      price: 5,
+      limit_type: 1,
+      limit_amount: 3
+    }
+  },
+
+  {
+    key: 12,
+    value {
+      id: 12,
+      item_id: 1507606,
+      shop_type: 1,
+      req_type: 0,
+      event_id: 1,
+      req_1: 0,
+      req_2: 0,
+      price_type: 3,
+      price: 10,
+      limit_type: 1,
+      limit_amount: 5
+    }
+  },
+
+  {
+    key: 13,
+    value {
+      id: 13,
+      item_id: 1507607,
+      shop_type: 1,
+      req_type: 0,
+      event_id: 1,
+      req_1: 0,
+      req_2: 0,
+      price_type: 3,
+      price: 1,
+      limit_type: 1,
+      limit_amount: 100
+    }
+  },
+
+  {
+    key: 14,
+    value {
+      id: 14,
+      item_id: 1507611,
+      shop_type: 1,
+      req_type: 0,
+      event_id: 1,
+      req_1: 0,
+      req_2: 0,
+      price_type: 3,
+      price: 3,
+      limit_type: 1,
+      limit_amount: 3
+    }
+  },
+
+  {
+    key: 15,
+    value {
+      id: 15,
+      item_id: 1509290,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 5,
+      req_2: 0,
+      price_type: 3,
+      price: 5,
+      limit_type: 1,
+      limit_amount: 5
+    }
+  },
+
+  {
+    key: 16,
+    value {
+      id: 16,
+      item_id: 1507612,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 10,
+      req_2: 0,
+      price_type: 3,
+      price: 8,
+      limit_type: 1,
+      limit_amount: 5
+    }
+  },
+
+  {
+    key: 17,
+    value {
+      id: 17,
+      item_id: 1511198,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 15,
+      req_2: 0,
+      price_type: 3,
+      price: 15,
+      limit_type: 2,
+      limit_amount: 10
+    }
+  },
+
+  {
+    key: 18,
+    value {
+      id: 18,
+      item_id: 1509341,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 15,
+      req_2: 0,
+      price_type: 3,
+      price: 15,
+      limit_type: 2,
+      limit_amount: 15
+    }
+  },
+
+  {
+    key: 19,
+    value {
+      id: 19,
+      item_id: 1507560,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 20,
+      req_2: 0,
+      price_type: 3,
+      price: 100,
+      limit_type: 4,
+      limit_amount: 15
+    }
+  },
+
+  {
+    key: 20,
+    value {
+      id: 20,
+      item_id: 1591044,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 20,
+      req_2: 0,
+      price_type: 3,
+      price: 2000,
+      limit_type: 4,
+      limit_amount: 1
+    }
+  },
+
+  {
+    key: 21,
+    value {
+      id: 21,
+      item_id: 769292,
+      shop_type: 1,
+      req_type: 0,
+      event_id: 1,
+      req_1: 0,
+      req_2: 0,
+      price_type: 3,
+      price: 15,
+      limit_type: 2,
+      limit_amount: 10
+    }
+  },
+
+  {
+    key: 22,
+    value {
+      id: 22,
+      item_id: 769293,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 5,
+      req_2: 0,
+      price_type: 3,
+      price: 30,
+      limit_type: 2,
+      limit_amount: 5
+    }
+  },
+
+  {
+    key: 23,
+    value {
+      id: 23,
+      item_id: 769294,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 10,
+      req_2: 0,
+      price_type: 3,
+      price: 50,
+      limit_type: 2,
+      limit_amount: 3
+    }
+  },
+
+  {
+    key: 24,
+    value {
+      id: 24,
+      item_id: 769295,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 15,
+      req_2: 0,
+      price_type: 3,
+      price: 135,
+      limit_type: 4,
+      limit_amount: 10
+    }
+  },
+
+  {
+    key: 25,
+    value {
+      id: 25,
+      item_id: 769296,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 15,
+      req_2: 0,
+      price_type: 3,
+      price: 270,
+      limit_type: 4,
+      limit_amount: 3
+    }
+  },
+
+  {
+    key: 26,
+    value {
+      id: 26,
+      item_id: 1509788,
+      shop_type: 1,
+      req_type: 0,
+      event_id: 1,
+      req_1: 0,
+      req_2: 0,
+      price_type: 3,
+      price: 10,
+      limit_type: 1,
+      limit_amount: 3
+    }
+  },
+
+  {
+    key: 27,
+    value {
+      id: 27,
+      item_id: 1509786,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 5,
+      req_2: 0,
+      price_type: 3,
+      price: 30,
+      limit_type: 1,
+      limit_amount: 3
+    }
+  },
+
+  {
+    key: 28,
+    value {
+      id: 28,
+      item_id: 769289,
+      shop_type: 1,
+      req_type: 0,
+      event_id: 1,
+      req_1: 0,
+      req_2: 0,
+      price_type: 3,
+      price: 1,
+      limit_type: 1,
+      limit_amount: 25
+    }
+  },
+
+  {
+    key: 29,
+    value {
+      id: 29,
+      item_id: 1595077,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 20,
+      req_2: 0,
+      price_type: 3,
+      price: 500,
+      limit_type: 4,
+      limit_amount: 3
+    }
+  },
+
+  {
+    key: 30,
+    value {
+      id: 30,
+      item_id: 1512313,
+      shop_type: 1,
+      req_type: 0,
+      event_id: 1,
+      req_1: 0,
+      req_2: 0,
+      price_type: 3,
+      price: 5,
+      limit_type: 1,
+      limit_amount: 50
+    }
+  },
+
+  {
+    key: 31,
+    value {
+      id: 31,
+      item_id: 1512314,
+      shop_type: 1,
+      req_type: 0,
+      event_id: 1,
+      req_1: 0,
+      req_2: 0,
+      price_type: 3,
+      price: 10,
+      limit_type: 1,
+      limit_amount: 25
+    }
+  },
+
+  {
+    key: 32,
+    value {
+      id: 32,
+      item_id: 1037150,
+      shop_type: 1,
+      req_type: 0,
+      event_id: 1,
+      req_1: 0,
+      req_2: 0,
+      price_type: 3,
+      price: 1,
+      limit_type: 1,
+      limit_amount: 25
+    }
+  },
+
+  {
+    key: 33,
+    value {
+      id: 33,
+      item_id: 1037170,
+      shop_type: 1,
+      req_type: 0,
+      event_id: 1,
+      req_1: 0,
+      req_2: 0,
+      price_type: 3,
+      price: 3,
+      limit_type: 1,
+      limit_amount: 25
+    }
+  },
+
+  {
+    key: 34,
+    value {
+      id: 34,
+      item_id: 1037160,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 5,
+      req_2: 0,
+      price_type: 3,
+      price: 15,
+      limit_type: 2,
+      limit_amount: 5
+    }
+  },
+
+  {
+    key: 35,
+    value {
+      id: 35,
+      item_id: 1505244,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 5,
+      req_2: 0,
+      price_type: 3,
+      price: 10,
+      limit_type: 1,
+      limit_amount: 5
+    }
+  },
+
+  {
+    key: 36,
+    value {
+      id: 36,
+      item_id: 1501966,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 15,
+      req_2: 0,
+      price_type: 3,
+      price: 300,
+      limit_type: 4,
+      limit_amount: 3
+    }
+  },
+
+  {
+    key: 37,
+    value {
+      id: 37,
+      item_id: 1593237,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 20,
+      req_2: 0,
+      price_type: 3,
+      price: 1250,
+      limit_type: 4,
+      limit_amount: 1
+    }
+  },
+
+  {
+    key: 38,
+    value {
+      id: 38,
+      item_id: 1511896,
+      shop_type: 1,
+      req_type: 0,
+      event_id: 1,
+      req_1: 0,
+      req_2: 0,
+      price_type: 3,
+      price: 10,
+      limit_type: 1,
+      limit_amount: 3
+    }
+  },
+
+  {
+    key: 39,
+    value {
+      id: 39,
+      item_id: 1599430,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 15,
+      req_2: 0,
+      price_type: 3,
+      price: 250,
+      limit_type: 4,
+      limit_amount: 3
+    }
+  },
+
+  {
+    key: 40,
+    value {
+      id: 40,
+      item_id: 1029679,
+      shop_type: 1,
+      req_type: 0,
+      event_id: 1,
+      req_1: 0,
+      req_2: 0,
+      price_type: 3,
+      price: 1,
+      limit_type: 1,
+      limit_amount: 10
+    }
+  },
+
+  {
+    key: 41,
+    value {
+      id: 41,
+      item_id: 1029680,
+      shop_type: 1,
+      req_type: 0,
+      event_id: 1,
+      req_1: 0,
+      req_2: 0,
+      price_type: 3,
+      price: 3,
+      limit_type: 1,
+      limit_amount: 5
+    }
+  },
+
+  {
+    key: 42,
+    value {
+      id: 42,
+      item_id: 1029681,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 5,
+      req_2: 0,
+      price_type: 3,
+      price: 7,
+      limit_type: 1,
+      limit_amount: 3
+    }
+  },
+
+  {
+    key: 43,
+    value {
+      id: 43,
+      item_id: 1029682,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 10,
+      req_2: 0,
+      price_type: 3,
+      price: 15,
+      limit_type: 2,
+      limit_amount: 3
+    }
+  },
+
+  {
+    key: 44,
+    value {
+      id: 44,
+      item_id: 1029683,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 15,
+      req_2: 0,
+      price_type: 3,
+      price: 25,
+      limit_type: 4,
+      limit_amount: 5
+    }
+  },
+
+  {
+    key: 45,
+    value {
+      id: 45,
+      item_id: 1029667,
+      shop_type: 1,
+      req_type: 0,
+      event_id: 1,
+      req_1: 0,
+      req_2: 0,
+      price_type: 3,
+      price: 1,
+      limit_type: 1,
+      limit_amount: 30
+    }
+  },
+
+  {
+    key: 46,
+    value {
+      id: 46,
+      item_id: 1029668,
+      shop_type: 1,
+      req_type: 0,
+      event_id: 1,
+      req_1: 0,
+      req_2: 0,
+      price_type: 3,
+      price: 2,
+      limit_type: 1,
+      limit_amount: 5
+    }
+  },
+
+  {
+    key: 47,
+    value {
+      id: 47,
+      item_id: 1029669,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 5,
+      req_2: 0,
+      price_type: 3,
+      price: 8,
+      limit_type: 1,
+      limit_amount: 2
+    }
+  },
+
+  {
+    key: 48,
+    value {
+      id: 48,
+      item_id: 1029670,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 10,
+      req_2: 0,
+      price_type: 3,
+      price: 15,
+      limit_type: 2,
+      limit_amount: 2
+    }
+  },
+
+  {
+    key: 49,
+    value {
+      id: 49,
+      item_id: 1024076,
+      shop_type: 1,
+      req_type: 0,
+      event_id: 1,
+      req_1: 0,
+      req_2: 0,
+      price_type: 3,
+      price: 25,
+      limit_type: 1,
+      limit_amount: 1
+    }
+  },
+
+  {
+    key: 50,
+    value {
+      id: 50,
+      item_id: 1024077,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 5,
+      req_2: 0,
+      price_type: 3,
+      price: 30,
+      limit_type: 1,
+      limit_amount: 1
+    }
+  },
+
+  {
+    key: 51,
+    value {
+      id: 51,
+      item_id: 815247,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 10,
+      req_2: 0,
+      price_type: 3,
+      price: 40,
+      limit_type: 2,
+      limit_amount: 3
+    }
+  },
+
+  {
+    key: 52,
+    value {
+      id: 52,
+      item_id: 815253,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 15,
+      req_2: 0,
+      price_type: 3,
+      price: 50,
+      limit_type: 2,
+      limit_amount: 1
+    }
+  },
+
+  {
+    key: 53,
+    value {
+      id: 53,
+      item_id: 1503698,
+      shop_type: 1,
+      req_type: 0,
+      event_id: 1,
+      req_1: 0,
+      req_2: 0,
+      price_type: 3,
+      price: 30,
+      limit_type: 1,
+      limit_amount: 1
+    }
+  },
+
+  {
+    key: 54,
+    value {
+      id: 54,
+      item_id: 1594758,
+      shop_type: 1,
+      req_type: 0,
+      event_id: 1,
+      req_1: 0,
+      req_2: 0,
+      price_type: 3,
+      price: 30,
+      limit_type: 1,
+      limit_amount: 1
+    }
+  },
+
+  {
+    key: 55,
+    value {
+      id: 55,
+      item_id: 1503699,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 5,
+      req_2: 0,
+      price_type: 3,
+      price: 40,
+      limit_type: 1,
+      limit_amount: 1
+    }
+  },
+
+  {
+    key: 56,
+    value {
+      id: 56,
+      item_id: 1503700,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 10,
+      req_2: 0,
+      price_type: 3,
+      price: 50,
+      limit_type: 2,
+      limit_amount: 3
+    }
+  },
+
+  {
+    key: 57,
+    value {
+      id: 57,
+      item_id: 1503701,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 15,
+      req_2: 0,
+      price_type: 3,
+      price: 60,
+      limit_type: 2,
+      limit_amount: 1
+    }
+  },
+
+  {
+    key: 58,
+    value {
+      id: 58,
+      item_id: 1027000,
+      shop_type: 1,
+      req_type: 0,
+      event_id: 1,
+      req_1: 0,
+      req_2: 0,
+      price_type: 3,
+      price: 2,
+      limit_type: 1,
+      limit_amount: 15
+    }
+  },
+
+  {
+    key: 59,
+    value {
+      id: 59,
+      item_id: 1503542,
+      shop_type: 1,
+      req_type: 0,
+      event_id: 1,
+      req_1: 0,
+      req_2: 0,
+      price_type: 3,
+      price: 10,
+      limit_type: 1,
+      limit_amount: 10
+    }
+  },
+
+  {
+    key: 60,
+    value {
+      id: 60,
+      item_id: 1027001,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 5,
+      req_2: 0,
+      price_type: 3,
+      price: 20,
+      limit_type: 2,
+      limit_amount: 3
+    }
+  },
+
+  {
+    key: 61,
+    value {
+      id: 61,
+      item_id: 1503543,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 5,
+      req_2: 0,
+      price_type: 3,
+      price: 40,
+      limit_type: 2,
+      limit_amount: 3
+    }
+  },
+
+  {
+    key: 62,
+    value {
+      id: 62,
+      item_id: 850081,
+      shop_type: 1,
+      req_type: 0,
+      event_id: 1,
+      req_1: 0,
+      req_2: 0,
+      price_type: 3,
+      price: 40,
+      limit_type: 1,
+      limit_amount: 2
+    }
+  },
+
+  {
+    key: 63,
+    value {
+      id: 63,
+      item_id: 1504232,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 5,
+      req_2: 0,
+      price_type: 3,
+      price: 70,
+      limit_type: 1,
+      limit_amount: 1
+    }
+  },
+
+  {
+    key: 64,
+    value {
+      id: 64,
+      item_id: 1506283,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 10,
+      req_2: 0,
+      price_type: 3,
+      price: 140,
+      limit_type: 2,
+      limit_amount: 5
+    }
+  },
+
+  {
+    key: 65,
+    value {
+      id: 65,
+      item_id: 1500294,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 5,
+      req_2: 0,
+      price_type: 3,
+      price: 30,
+      limit_type: 1,
+      limit_amount: 3
+    }
+  },
+
+  {
+    key: 66,
+    value {
+      id: 66,
+      item_id: 1500988,
+      shop_type: 1,
+      req_type: 1,
+      event_id: 1,
+      req_1: 10,
+      req_2: 0,
+      price_type: 3,
+      price: 20,
+      limit_type: 2,
+      limit_amount: 10
+    }
+  },
+
+  {
+    key: 67,
+    value {
+      id: 67,
+      item_id: 1026643,
+      shop_type: 1,
+      req_type: 0,
+      event_id: 1,
+      req_1: 0,
+      req_2: 0,
+      price_type: 3,
+      price: 30,
+      limit_type: 1,
+      limit_amount: 1
+    }
+  },
+
+  {
+    key: 68,
+    value {
+      id: 68,
+      item_id: 1028033,
+      shop_type: 1,
+      req_type: 0,
+      event_id: 1,
+      req_1: 0,
+      req_2: 0,
+      price_type: 3,
+      price: 5,
+      limit_type: 0,
+      limit_amount: 1
+    }
+  }
+]

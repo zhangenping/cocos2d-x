@@ -30,6 +30,10 @@
 #include "cocostudio/CocoStudio.h"
 #include "extensions/cocos-ext.h"
 #include "tracy/tracy/Tracy.hpp"
+#include "MyDataTableMgr.h"
+#include "achievemilestone.pb.h"
+#include <vector>
+
 USING_NS_CC;
 
 AppDelegate::AppDelegate()
@@ -58,6 +62,13 @@ bool AppDelegate::applicationDidFinishLaunching()
 {
     // 仅使用ZoneScoped和FrameMark这两个最基础的API
     ZoneScopedN("AppLaunch");
+    MyDataTableMgr::GetInstance().Init();
+
+    std::vector<const class DT_achievemilestone*> vecAchieveMilestone;
+    MyDataTableMgr::GetInstance().ForEach<achievemilestone, DT_achievemilestone>([&](const DT_achievemilestone& dt)->bool {
+        vecAchieveMilestone.push_back(&dt);
+        return true;
+        });
 
 
     // As an example, load config file

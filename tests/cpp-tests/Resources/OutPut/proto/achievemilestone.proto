@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+message DT_achievemilestone {
+    // 里程碑分数
+    uint32 id_score = 1;
+    // 当前等级名字
+    bytes name = 2;
+    // 等级图标
+    bytes icon = 3;
+    // 物品id
+    uint32 item_type = 4;
+    // 数量
+    uint32 count = 5;
+    // 等级
+    uint32 lev = 6;
+}
+
+message achievemilestone {
+    // config map
+    map<uint32,DT_achievemilestone> config = 1;
+}

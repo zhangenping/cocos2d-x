@@ -1,0 +1,193 @@
+config [
+  {
+    key: 1000,
+    value {
+      id_score: 1000,
+      name: "初出茅庐Ⅰ",
+      icon: "achievement_new_medal1pic",
+      item_type: 1596290,
+      count: 1,
+      lev: 0
+    }
+  },
+
+  {
+    key: 3000,
+    value {
+      id_score: 3000,
+      name: "初出茅庐Ⅱ",
+      icon: "achievement_new_medal1pic",
+      item_type: 1596291,
+      count: 1,
+      lev: 1
+    }
+  },
+
+  {
+    key: 5000,
+    value {
+      id_score: 5000,
+      name: "初出茅庐Ⅲ",
+      icon: "achievement_new_medal1pic",
+      item_type: 1596292,
+      count: 1,
+      lev: 2
+    }
+  },
+
+  {
+    key: 8000,
+    value {
+      id_score: 8000,
+      name: "初出茅庐Ⅳ",
+      icon: "achievement_new_medal1pic",
+      item_type: 1596293,
+      count: 1,
+      lev: 3
+    }
+  },
+
+  {
+    key: 12000,
+    value {
+      id_score: 12000,
+      name: "声名鹊起Ⅰ",
+      icon: "achievement_new_medal2pic",
+      item_type: 1596294,
+      count: 1,
+      lev: 4
+    }
+  },
+
+  {
+    key: 16000,
+    value {
+      id_score: 16000,
+      name: "声名鹊起Ⅱ",
+      icon: "achievement_new_medal2pic",
+      item_type: 1596295,
+      count: 1,
+      lev: 5
+    }
+  },
+
+  {
+    key: 20000,
+    value {
+      id_score: 20000,
+      name: "声名鹊起Ⅲ",
+      icon: "achievement_new_medal2pic",
+      item_type: 1596296,
+      count: 1,
+      lev: 6
+    }
+  },
+
+  {
+    key: 25000,
+    value {
+      id_score: 25000,
+      name: "声名鹊起Ⅳ",
+      icon: "achievement_new_medal2pic",
+      item_type: 1596297,
+      count: 1,
+      lev: 7
+    }
+  },
+
+  {
+    key: 30000,
+    value {
+      id_score: 30000,
+      name: "赫赫有名Ⅰ",
+      icon: "achievement_new_medal3pic",
+      item_type: 1596298,
+      count: 1,
+      lev: 8
+    }
+  },
+
+  {
+    key: 40000,
+    value {
+      id_score: 40000,
+      name: "赫赫有名Ⅱ",
+      icon: "achievement_new_medal3pic",
+      item_type: 1596299,
+      count: 1,
+      lev: 9
+    }
+  },
+
+  {
+    key: 50000,
+    value {
+      id_score: 50000,
+      name: "赫赫有名Ⅲ",
+      icon: "achievement_new_medal3pic",
+      item_type: 1596300,
+      count: 1,
+      lev: 10
+    }
+  },
+
+  {
+    key: 60000,
+    value {
+      id_score: 60000,
+      name: "赫赫有名Ⅳ",
+      icon: "achievement_new_medal3pic",
+      item_type: 1596301,
+      count: 1,
+      lev: 11
+    }
+  },
+
+  {
+    key: 70000,
+    value {
+      id_score: 70000,
+      name: "如雷贯耳Ⅰ",
+      icon: "achievement_new_medal4pic",
+      item_type: 1596302,
+      count: 1,
+      lev: 12
+    }
+  },
+
+  {
+    key: 80000,
+    value {
+      id_score: 80000,
+      name: "如雷贯耳Ⅱ",
+      icon: "achievement_new_medal4pic",
+      item_type: 1596303,
+      count: 1,
+      lev: 13
+    }
+  },
+
+  {
+    key: 90000,
+    value {
+      id_score: 90000,
+      name: "如雷贯耳Ⅲ",
+      icon: "achievement_new_medal4pic",
+      item_type: 1596304,
+      count: 1,
+      lev: 14
+    }
+  },
+
+  {
+    key: 100000,
+    value {
+      id_score: 100000,
+      name: "如雷贯耳Ⅳ",
+      icon: "achievement_new_medal4pic",
+      item_type: 1596305,
+      count: 1,
+      lev: 15
+    }
+  }
+]

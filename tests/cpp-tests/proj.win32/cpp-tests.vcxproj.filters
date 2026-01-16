@@ -373,6 +373,12 @@
     <Filter Include="Classes\DownloaderTest">
       <UniqueIdentifier>{3442fab7-30f3-4bbc-8b7c-5821011d4935}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\GameBase">
+      <UniqueIdentifier>{8a8aa3cc-0097-45cd-a586-1c0f80f3c8d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\GameBase\ProtoConfig">
+      <UniqueIdentifier>{4cd82896-1a74-46e0-8ca4-8bb1efec83aa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -936,6 +942,18 @@
     </ClCompile>
     <ClCompile Include="..\Classes\DownloaderTest\DownloaderTest.cpp">
       <Filter>Classes\DownloaderTest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameBase\MyDataTableMgr.cpp">
+      <Filter>Classes\GameBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameBase\ProtoConfig\achievemilestone.pb.cpp">
+      <Filter>Classes\GameBase\ProtoConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameBase\ProtoConfig\achiveactivityshop.pb.cpp">
+      <Filter>Classes\GameBase\ProtoConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameBase\ProtoConfig\additionattr.pb.cpp">
+      <Filter>Classes\GameBase\ProtoConfig</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -1697,6 +1715,21 @@
     </ClInclude>
     <ClInclude Include="..\Classes\DownloaderTest\DownloaderTest.h">
       <Filter>Classes\DownloaderTest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameBase\MyDataTableMgr.h">
+      <Filter>Classes\GameBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameBase\ProtoConfig\achievemilestone.pb.h">
+      <Filter>Classes\GameBase\ProtoConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameBase\ProtoConfig\achiveactivityshop.pb.h">
+      <Filter>Classes\GameBase\ProtoConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameBase\ProtoConfig\additionattr.pb.h">
+      <Filter>Classes\GameBase\ProtoConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameBase\ProtobufExport.h">
+      <Filter>Classes\GameBase</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

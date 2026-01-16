@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+message DT_additionattr {
+    // 状态ID(additiontype att1-att12索引)
+    uint32 id = 1;
+    // 加成类型
+    uint32 add_type = 2;
+    // 固定加成
+    uint32 add_value = 3;
+    // 万分比加成
+    uint32 add_ratio = 4;
+    // 额外加成值
+    uint32 add_extra_value = 5;
+}
+
+message additionattr {
+    // config map
+    map<uint32,DT_additionattr> config = 1;
+}

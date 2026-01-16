@@ -74,8 +74,8 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\Classes;$(EngineRoot);$(EngineRoot)cocos;$(EngineRoot)cocos\editor-support;$(EngineRoot)cocos\audio\include;$(EngineRoot)cocos\network;$(EngineRoot)external;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)external\curl\include\win32;$(EngineRoot)external\websockets\win32\include;$(EngineRoot)extensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;COCOS2DXWIN32_EXPORTS;TRACY_ENABLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Classes;..\Classes\Proto\x86-windows\include;..\Classes\GameBase;..\Classes\GameBase\ProtoConfig;$(EngineRoot);$(EngineRoot)cocos;$(EngineRoot)cocos\editor-support;$(EngineRoot)cocos\audio\include;$(EngineRoot)cocos\network;$(EngineRoot)external;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)external\curl\include\win32;$(EngineRoot)external\websockets\win32\include;$(EngineRoot)extensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;COCOS2DXWIN32_EXPORTS;TRACY_ENABLE;MY_PROTOBUF_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <PrecompiledHeader>
@@ -87,11 +87,11 @@
     </ClCompile>
     <Link>
       <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
-      <AdditionalLibraryDirectories>$(OutDir);$(SolutionDir)$(Configuration).win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(SolutionDir)..\tests\cpp-tests\Classes\Proto\x86-windows\debug\lib;$(SolutionDir)$(Configuration).win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
-      <AdditionalDependencies>libcocos2d.lib;libcurl_imp.lib;websockets.lib;opengl32.lib;glew32.lib;TracyClient.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libcocos2d.lib;libcurl_imp.lib;websockets.lib;opengl32.lib;glew32.lib;TracyClient.lib;abseil_dll.lib;absl_flags_commandlineflag.lib;absl_flags_commandlineflag_internal.lib;absl_flags_config.lib;absl_flags_internal.lib;absl_flags_marshalling.lib;absl_flags_parse.lib;absl_flags_private_handle_accessor.lib;absl_flags_program_name.lib;absl_flags_reflection.lib;absl_flags_usage.lib;absl_flags_usage_internal.lib;absl_log_flags.lib;absl_log_internal_fnmatch.lib;absl_string_view.lib;absl_vlog_config_internal.lib;libprotobufd.lib;libprotobuf-lited.lib;libprotocd.lib;utf8_range.lib;utf8_validity.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>
@@ -189,6 +189,10 @@ xcopy "$(OutDir)..\*.dll" "$(OutDir)" /D /Y</Command>
     <ClCompile Include="..\Classes\ExtensionsTest\TableViewTest\CustomTableViewCell.cpp" />
     <ClCompile Include="..\Classes\ExtensionsTest\TableViewTest\TableViewTestScene.cpp" />
     <ClCompile Include="..\Classes\FileUtilsTest\FileUtilsTest.cpp" />
+    <ClCompile Include="..\Classes\GameBase\MyDataTableMgr.cpp" />
+    <ClCompile Include="..\Classes\GameBase\ProtoConfig\achievemilestone.pb.cpp" />
+    <ClCompile Include="..\Classes\GameBase\ProtoConfig\achiveactivityshop.pb.cpp" />
+    <ClCompile Include="..\Classes\GameBase\ProtoConfig\additionattr.pb.cpp" />
     <ClCompile Include="..\Classes\InputTest\MouseTest.cpp" />
     <ClCompile Include="..\Classes\LabelTest\LabelTestNew.cpp" />
     <ClCompile Include="..\Classes\LightTest\LightTest.cpp" />
@@ -387,6 +391,11 @@ xcopy "$(OutDir)..\*.dll" "$(OutDir)" /D /Y</Command>
     <ClInclude Include="..\Classes\ExtensionsTest\TableViewTest\CustomTableViewCell.h" />
     <ClInclude Include="..\Classes\ExtensionsTest\TableViewTest\TableViewTestScene.h" />
     <ClInclude Include="..\Classes\FileUtilsTest\FileUtilsTest.h" />
+    <ClInclude Include="..\Classes\GameBase\MyDataTableMgr.h" />
+    <ClInclude Include="..\Classes\GameBase\ProtobufExport.h" />
+    <ClInclude Include="..\Classes\GameBase\ProtoConfig\achievemilestone.pb.h" />
+    <ClInclude Include="..\Classes\GameBase\ProtoConfig\achiveactivityshop.pb.h" />
+    <ClInclude Include="..\Classes\GameBase\ProtoConfig\additionattr.pb.h" />
     <ClInclude Include="..\Classes\InputTest\MouseTest.h" />
     <ClInclude Include="..\Classes\LabelTest\LabelTestNew.h" />
     <ClInclude Include="..\Classes\LightTest\LightTest.h" />

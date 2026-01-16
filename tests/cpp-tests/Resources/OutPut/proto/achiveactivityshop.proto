@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+message DT_achiveactivityshop {
+    // id
+    uint32 id = 1;
+    // 物品
+    uint32 item_id = 2;
+    // 商店类型(1,当期，2往期)
+    uint32 shop_type = 3;
+    // 购买要求类型
+    uint32 req_type = 4;
+    // 当期活动id
+    uint32 event_id = 5;
+    // 购买条件1(当期等级)
+    uint32 req_1 = 6;
+    // 购买条件2（往期累计等级）
+    uint32 req_2 = 7;
+    // 货币类型(0免费,1魔石,2金币,3成就点,4对应的道具id)
+    uint32 price_type = 8;
+    // 价格
+    uint32 price = 9;
+    // 限购类型(0不限购.1每日限购,2每周限购,3每月限购,4活动限购)
+    uint32 limit_type = 10;
+    // 限购数量
+    uint32 limit_amount = 11;
+}
+
+message achiveactivityshop {
+    // config map
+    map<uint32,DT_achiveactivityshop> config = 1;
+}
